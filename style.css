@@ -4,6 +4,36 @@
   font-family: "Hammersmith One", sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+
+header {
+  /* existing styles for the header section */
+
+  animation: fadeIn 1s ease-in-out;
+}
+
+
 img {
   pointer-events: none;
 }
@@ -75,9 +105,8 @@ main {
 }
 
 .myherobox {
-  background-color: rgb(245,245,239);
+  background-color: rgb(245, 245, 239);
   height: 650px;
-  /* margin-bottom: 20px; */
 }
 
 /* box1 */
@@ -142,6 +171,10 @@ main {
 }
 
 /* box2 */
+
+
+
+
 .box2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -150,24 +183,23 @@ main {
 }
 
 .box2--card1 {
-  /* background-color: blueviolet; */
   height: 70%;
   margin-top: 30%;
+ 
 }
 
 .box2--card1 h1 {
   width: 200px;
-  /* background-color: brown; */
 }
 
 .box2--card2 {
   margin-top: 30%;
   height: 70%;
-  /* background-color: blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .box2--card2 img {
@@ -177,7 +209,7 @@ main {
   font-family: "Hammersmith One", sans-serif;
 }
 
-.img2 img{
+.img2 img {
   object-position: -80px 0px;
 }
 
@@ -199,11 +231,9 @@ main {
   align-items: center;
 }
 
-
-
 .box3-card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 50px;
   column-gap: 20px;
   height: 150px;
@@ -214,7 +244,7 @@ main {
   grid-template-columns: 1fr;
 }
 
-.box3-card p{
+.box3-card p {
   width: 280px;
   padding-top: 20px;
 }
@@ -230,19 +260,18 @@ footer {
   background-image: url(images/night-darios.jpg);
   background-repeat: no-repeat;
   background-size: cover;
- 
+
   background-position: center;
 }
 
 .contact-info {
   display: flex;
- align-items: start;
+  align-items: start;
   flex-direction: column;
   padding-left: 50px;
   padding-top: 80px;
-  background-color: rgb(245,245,239);
+  background-color: rgb(245, 245, 239);
   height: 500px;
-
 }
 
 .contact-info-title {
@@ -258,24 +287,22 @@ footer {
   align-items: start;
   justify-content: space-between;
   flex-direction: column;
-  /* background-color: blanchedalmond; */
   width: 220px;
- padding: 20px;
- margin-top: 20px;
- 
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.myphone, .myemail, .myadress{
-  font-size:  12px;
+.myphone,
+.myemail,
+.myadress {
+  font-size: 12px;
   margin-bottom: 30px;
 }
 
-.myphone p, .myemail p, .myadress p{
-  font-size:  12px;
+.myphone p,
+.myemail p,
+.myadress p {
+  font-size: 12px;
   margin-top: 3px;
   color: #535353;
-  
 }
-
-
-
