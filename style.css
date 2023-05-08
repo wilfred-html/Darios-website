@@ -222,15 +222,60 @@ main {
 /* footer */
 
 footer {
-  background-color: green;
-  height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.img-container {
+  background-image: url(images/night-darios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  background-position: center;
+}
+
 .contact-info {
+  display: flex;
+ align-items: start;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 80px;
+  background-color: rgb(245,245,239);
+  height: 500px;
+
+}
+
+.contact-info-title {
   display: flex;
   justify-content: center;
   padding-top: 50px;
-  background-color: rgb(245,245,239);
+  font-size: 35px;
+  padding: 20px;
 }
+
+.contact-info-paths {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  /* background-color: blanchedalmond; */
+  width: 220px;
+ padding: 20px;
+ margin-top: 20px;
+ 
+}
+
+.myphone, .myemail, .myadress{
+  font-size:  12px;
+  margin-bottom: 30px;
+}
+
+.myphone p, .myemail p, .myadress p{
+  font-size:  12px;
+  margin-top: 3px;
+  color: #535353;
+  
+}
+
+
+
