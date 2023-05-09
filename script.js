@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let fadeElements = document.querySelectorAll(".fade-in");
   let fadeTimeout;
 
@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function scrollHandler() {
     clearTimeout(fadeTimeout);
-    fadeTimeout = setTimeout(checkFadeElements, 8);
-  }
+    fadeTimeout = setTimeout(checkFadeElements, 5);
+  } 
 
   window.addEventListener("scroll", scrollHandler);
   checkFadeElements();
 });
+

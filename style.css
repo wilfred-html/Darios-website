@@ -13,10 +13,6 @@
   }
 }
 
-
-
-
-
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s;
@@ -26,25 +22,21 @@
   opacity: 1;
 }
 
-
 header {
   /* existing styles for the header section */
-
   animation: fadeIn 1s ease-in-out;
 }
-
 
 img {
   pointer-events: none;
 }
 
 body {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.622),
-      rgba(0, 0, 0, 0.622)
-    ),
-    url(/images/inside-darios1.jpg);
+  background-image:linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.622),
+    rgba(0, 0, 0, 0.622)
+  ), url("images/inside-darios1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,9 +164,6 @@ main {
 
 /* box2 */
 
-
-
-
 .box2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -185,7 +174,6 @@ main {
 .box2--card1 {
   height: 70%;
   margin-top: 30%;
- 
 }
 
 .box2--card1 h1 {
@@ -199,7 +187,6 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .box2--card2 img {
@@ -294,14 +281,14 @@ footer {
 
 .myphone,
 .myemail,
-.myadress {
+.myaddress {
   font-size: 12px;
   margin-bottom: 30px;
 }
 
 .myphone p,
 .myemail p,
-.myadress p {
+.myaddress p {
   font-size: 12px;
   margin-top: 3px;
   color: #535353;

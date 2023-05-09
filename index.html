@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dario's Cafe'</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="path/to/slick.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +21,9 @@
 
       <div class="myslogan">ITALY IN HOUT BAY</div>
 
-      <div class="mydiv"><a class="mybtn" href="#">Dine With Us</a></div>
+      <div class="mydiv">
+        <a class="mybtn" href="#img-container">Dine With Us</a>
+      </div>
     </header>
 
     <main>
@@ -74,7 +77,6 @@
           <p>SWEET ENDINGS</p>
         </div>
       </div>
-
       <div class="myherobox box3 fade-in">
         <div class="box3-title">Love for Dario's cafe'</div>
 
@@ -108,29 +110,33 @@
     </main>
 
     <footer>
-      <div class="img-container"></div>
+      <div class="img-container" id="img-container"></div>
       <div class="contact-info fade-in">
         <div class="contact-info-title">see you soon</div>
 
         <div class="contact-info-paths">
           <div class="myphone">
             <h2>PHONE NUMBER</h2>
-            <p>+27 217 910 021</p>
+            <a href="tel:+27217910021">+27 217 910 021</a>
           </div>
 
           <div class="myemail">
             <h2>EMAIL ADDRESS</h2>
-            <p>hello@reallygreatsite.com</p>
+            <a href="mailto:wilfredd.singini@gmail.com">
+              wilfredd.singini@gmail.com
+            </a>
           </div>
 
-          <div class="myadress">
+          <div class="myaddress">
             <h2>RESTAURANT ADDRESS</h2>
+
             <p>30 Main Rd, Hout Bay, Cape Town, 7806</p>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="script,js"></script>
+    <script src="script.js"></script>
+    <script src="path/to/slick.min.js"></script>
   </body>
 </html>
