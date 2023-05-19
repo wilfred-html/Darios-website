@@ -208,8 +208,6 @@ main {
 .box3 {
   background-color: black;
   color: white;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .box3-title {
@@ -235,6 +233,20 @@ main {
   width: 280px;
   padding-top: 20px;
 }
+
+
+/* reviews */
+.reviews-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-container a {
+  margin-right: 20px;
+  color: white;
+}
+
+
 
 /* footer */
 
@@ -293,3 +305,5 @@ footer {
   margin-top: 3px;
   color: #535353;
 }
+
+
