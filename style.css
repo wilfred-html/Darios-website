@@ -13,6 +13,14 @@
   }
 }
 
+.box2-section2 {
+  display: none;
+}
+
+.box2-section {
+  display: block;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 0.5s;
@@ -22,34 +30,31 @@
   opacity: 1;
 }
 
-header {
-  /* existing styles for the header section */
-  animation: fadeIn 1s ease-in-out;
-}
-
 img {
   pointer-events: none;
 }
 
 body {
-  background-image:linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.622),
-    rgba(0, 0, 0, 0.622)
-  ), url("images/inside-darios1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.622), rgba(0, 0, 0, 0.622)),
+    url("images/inside-darios1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* header */
+.body-container {
+  background-color: rgb(245, 245, 239);
+}
 
+/* header */
 header {
-  height: 650px;
-  display: grid;
-  grid-template-columns: 1fr;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .mytitle,
@@ -60,7 +65,7 @@ header {
 }
 
 .mytitle {
-  padding-top: 60px;
+  padding-top: 30px;
   font-size: 20px;
   font-family: "Solway", serif;
 }
@@ -68,6 +73,8 @@ header {
 .myslogan {
   letter-spacing: 5px;
   font-size: 57.9px;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .mybtn {
@@ -91,26 +98,25 @@ header {
 }
 
 /* heroboxes */
-
 main {
   min-height: 10px;
 }
 
 .myherobox {
-  background-color: rgb(245, 245, 239);
-  height: 650px;
+  min-height: 650px;
 }
 
 /* box1 */
 .box1 {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr;
+  min-height: 800px;
   padding: 50px;
 }
 
 .image-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .image-cards img {
@@ -121,22 +127,18 @@ main {
 }
 
 .card1 {
-  margin-right: 40px;
-}
-
-.card1 img {
-  object-position: -220px 0px;
+  display: none;
 }
 
 .card2 {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
 }
 
 .card2 img {
-  object-position: -50px 0px;
-  height: 70%;
+  width: 120%;
+  height: 100%;
 }
 
 .about-text {
@@ -144,7 +146,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 0px;
 }
 
 .about-title {
@@ -158,22 +160,28 @@ main {
 .about-paragraph {
   font-family: "Hanken Grotesk", sans-serif;
   font-style: italic;
-  padding: 40px;
+  padding: 30px;
   border: 1px solid black;
+  width: 100%;
 }
 
-/* box2 */
+/* box2 -- flavours of hout bays finest */
+
+.box2-section {
+  padding: 30px;
+  min-height: 100px;
+}
 
 .box2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 30px;
-  column-gap: 20px;
+  min-height: 920px;
+  row-gap: 60px;
 }
 
 .box2--card1 {
   height: 70%;
-  margin-top: 30%;
 }
 
 .box2--card1 h1 {
@@ -181,10 +189,9 @@ main {
 }
 
 .box2--card2 {
-  margin-top: 30%;
-  height: 70%;
+  height: 263px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
 }
@@ -192,15 +199,20 @@ main {
 .box2--card2 img {
   object-fit: cover;
   width: 100%;
-  height: 90%;
+  height: 100%;
   font-family: "Hammersmith One", sans-serif;
 }
 
-.img2 img {
-  object-position: -80px 0px;
+.img4 {
+  display: none;
+}
+
+.img2 {
+  object-position: center;
 }
 
 .box2--card2 p {
+  padding-top: 20px;
   text-decoration: underline;
 }
 
@@ -216,25 +228,6 @@ main {
   align-items: center;
 }
 
-.box3-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 50px;
-  column-gap: 20px;
-  height: 150px;
-}
-
-.box3-card {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.box3-card p {
-  width: 280px;
-  padding-top: 20px;
-}
-
-
 /* reviews */
 .reviews-container {
   display: flex;
@@ -246,21 +239,27 @@ main {
   color: white;
 }
 
+/* location */
+.location-container {
+  background-color: rgb(245, 245, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 230px;
+}
 
+.maps {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
 
 /* footer */
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.img-container {
-  background-image: url(images/night-darios.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-position: center;
+  grid-template-columns: 1fr;
 }
 
 .contact-info {
@@ -268,9 +267,9 @@ footer {
   align-items: start;
   flex-direction: column;
   padding-left: 50px;
-  padding-top: 80px;
-  background-color: rgb(245, 245, 239);
-  height: 500px;
+  padding-top: 20px;
+  background-color: rgb(12, 12, 12);
+  color: white;
 }
 
 .contact-info-title {
@@ -279,6 +278,7 @@ footer {
   padding-top: 50px;
   font-size: 35px;
   padding: 20px;
+  font-style: italic;
 }
 
 .contact-info-paths {
@@ -298,12 +298,389 @@ footer {
   margin-bottom: 30px;
 }
 
-.myphone p,
-.myemail p,
+.myphone a,
+.myemail a,
 .myaddress p {
-  font-size: 12px;
+  font-size: 1rem;
   margin-top: 3px;
   color: #535353;
+  text-decoration: none;
 }
 
+.myphone h2,
+.myemail h2 {
+  margin-bottom: 3px;
+}
 
+.sigebrand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.t-cs {
+  height: 35px;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgray;
+  padding-left: 10px;
+  font-size: 0.8rem;
+}
+
+.t-cs a {
+  text-decoration: none;
+  color: lightgray;
+  padding: 0 5px;
+}
+
+/* Tablets/Ipads */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    min-height: 350px;
+    justify-content: center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.622),
+        rgba(0, 0, 0, 0.622)
+      ),
+      url("images/inside-darios1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    column-gap: 20px;
+  }
+
+  .image-cards img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card1 img {
+    width: 100%;
+    object-position: 0px;
+  }
+
+  .card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-paragraph {
+    font-size: 1.5rem;
+  }
+
+  /* box2 -- flavours of hout bay */
+
+  .box2-section {
+    padding: 30px;
+    min-height: 20px;
+  }
+
+  .box2--card1 {
+    height: 100%;
+    font-size: 1.85rem;
+  }
+
+  .box2--card1 h1 {
+    width: 100%;
+    text-decoration: underline rgb(29, 29, 29);
+  }
+
+  .box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    min-height: 820px;
+    column-gap: 30px;
+  }
+
+  .img4 {
+    display: block;
+    height: 493px;
+  }
+
+  .box2--card2 {
+    height: 493px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blue; */
+  }
+
+  .box2--card2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    font-family: "Hammersmith One", sans-serif;
+    border: 2px solid lightgray;
+  }
+
+  .img2 {
+    object-position: center;
+  }
+
+  .box2--card2 p {
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+
+  /* location */
+  .location-container {
+    height: 430px;
+  }
+
+  .maps {
+    border: 3px solid lightgray;
+  }
+
+  /* footer */
+
+  .contact-info-title {
+    font-size: 3rem;
+  }
+
+  .contact-info-paths {
+    min-width: 320px;
+  }
+
+  .myphone,
+  .myemail,
+  .myaddress {
+    font-size: 1.2rem;
+  }
+
+  .myphone a,
+  .myemail a,
+  .myaddress p {
+    font-size: 1.3rem;
+    color: #797979;
+    text-decoration: underline;
+  }
+
+  .sigebrand {
+    font-size: 1rem;
+  }
+
+  .t-cs a {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* header */
+
+  header {
+    min-height: 650px;
+    justify-content: space-around;
+  }
+
+  .mytitle {
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: "Solway", serif;
+  }
+
+  .myslogan {
+    letter-spacing: 5px;
+    font-size: 57.9px;
+  }
+
+  .box1 {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    padding: 50px;
+  }
+
+  .image-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+    column-gap: 20px;
+  }
+
+  .image-cards img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .card1 {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .card1 img {
+    object-position: -220px 0px;
+  }
+
+  .card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card2 img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .about-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 1rem;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+    padding: 40px;
+    width: 80%;
+  }
+
+  /* box2 -- flavours of hout bay */
+
+  .box2-section2 {
+    display: block;
+  }
+
+  .box2-section {
+    display: none;
+  }
+
+  .box2-section {
+    padding: 30px;
+    min-height: 20px;
+  }
+
+
+  .box2--card1 h1 {
+    width: 200px;
+    font-size: 32px;
+  }
+
+  .box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px;
+    min-height: 520px;
+    column-gap: 30px;
+  }
+
+  .box2--card2 {
+    height: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box2--card2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    font-family: "Hammersmith One", sans-serif;
+    border: 2px solid lightgray;
+  }
+
+  .img4 {
+    display: none;
+  }
+
+  .img2 {
+    object-position: center;
+  }
+
+  .box2--card2 p {
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+
+  /* location */
+  .location-container {
+    height: 430px;
+    padding: 40px;
+    background-color: rgb(12, 12, 12);
+  }
+
+  .maps {
+    border: 3px solid lightgray;
+  }
+
+  /* footer */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(12, 12, 12);
+
+  }
+
+  .contact-info-title {
+    font-size: 3rem;
+  }
+
+  .contact-info-paths {
+    min-width: 320px;
+  }
+
+  .myphone,
+  .myemail,
+  .myaddress {
+    font-size: 1rem;
+  }
+
+  .myphone a,
+  .myemail a,
+  .myaddress p {
+    font-size: 1rem;
+    color: #797979;
+    text-decoration: underline;
+  }
+
+  .sigebrand {
+    font-size: 1rem;
+  }
+
+  .t-cs a {
+    text-decoration: underline;
+  }
+}
