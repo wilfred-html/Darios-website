@@ -90,9 +90,14 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  width: 80%;
   letter-spacing: 3px;
-  /* background-color: burlywood; */
 }
+
+.menu-chia .name {
+  width: 100%;
+}
+
 
 .span-options {
   font-size: 0.6rem;
