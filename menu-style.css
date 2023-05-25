@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: rgb(255, 244, 214); */
+  background-color: rgb(252, 245, 225);
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Darios-font {
+  font-family: "Rubik Bubbles", cursive;
+  font-size: 1.8rem;
+  margin-right: 8px;
+  color: rgb(37, 37, 37);
+}
+
+.slant {
+  font-family: "Cedarville Cursive", cursive;
+  color: rgb(3, 121, 194);
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.des-cat h2 {
+  margin: 8px 0;
+}
+
+.des-cat,
+.des-cat2 {
+  text-align: center;
+  color: rgb(69, 128, 165);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.des-cat .description {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.des-cat2 {
+  margin: 0px 0 60px 0;
+}
+
+.des-cat2 .description {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Cedarville Cursive", cursive;
+  line-height: 18px;
+}
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column; /* Stack the item name, description, and price */
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 3px dashed #ddd;
+}
+
+.menu-item .name {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  letter-spacing: 3px;
+  /* background-color: burlywood; */
+}
+
+.span-options {
+  font-size: 0.6rem;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  font-style: italic;
+  color: rgb(69, 128, 165);
+  font-weight: 400;
+}
+
+
+.menu-item svg {
+  width: 18px;
+  height: 18px;
+  fill: rgb(255, 115, 0);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.options2 svg{
+  margin-left: 0px;
+  margin-bottom: 0;
+}
+
+
+.menu-item .description {
+  color: #888;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.menu-item .price {
+  color: #888;
+  margin-top: auto; /* Push the price to the bottom */
+}
+
+.menu-column {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.menu-column > div {
+  flex-basis: calc(50% - 10px);
+}
+
+.menu-NP {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-bottom: 20px;
+}
+
+.navigation a {
+  margin: 0 0px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: background-color 0.3s;
+  margin-bottom: 5px;
+  background-color: rgb(3, 121, 194);
+  color: white;
+}
+
+.navigation a:hover {
+  background-color: #bbb;
+}
+
+@media (min-width: 768px) {
+  .stripe1 {
+    border-right: 10px solid #c82a35;
+  }
+
+  .stripe2 {
+    border-right: 10px solid #f7f7f7;
+    margin: 0 10px;
+  }
+
+  .stripe3 {
+    border-right: 10px solid #008d44;
+  }
+
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    font-size: 1.7rem;
+  }
+
+  .navigation a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 18px;
+    background-color: rgb(3, 121, 194);
+    color: white;
+  }
+
+  .menu-item {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  h1 {
+    border: 1px solid black;
+    color: black;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .Darios-font {
+    font-family: "Rubik Bubbles", cursive;
+    font-size: 2.4rem;
+  }
+
+  .slant {
+    font-family: "Cedarville Cursive", cursive;
+    color: rgb(3, 121, 194);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stripe1 {
+    border-right: 20px solid #c82a35;
+  }
+
+  .stripe2 {
+    border-right: 20px solid #f7f7f7;
+    margin-right: 10px;
+  }
+
+  .stripe3 {
+    border-right: 20px solid #008d44;
+    margin-right: 10px;
+  }
+
+  /* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  } */
+
+  .menu-item {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .navigation a {
+    background-color: rgb(3, 121, 194);
+    color: white;
+  }
+
+  h1 {
+    border: 1px solid black;
+    color: black;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .Darios-font {
+    font-family: "Rubik Bubbles", cursive;
+    font-size: 2.4rem;
+  }
+
+  .slant {
+    font-family: "Cedarville Cursive", cursive;
+    color: rgb(3, 121, 194);
+  }
+}
