@@ -38,15 +38,35 @@ const beverageBtn = document.querySelector(".beverage-btn");
 const drinkBtn = document.querySelector(".drink-btn");
 const desertBtn = document.querySelector(".desert-btn");
 
+// Default Visibility 
 breakFast.style.display = "none";
-
+main.style.display = "block";
+breakFastBtn.style.backgroundColor = "darkblue";
 
 mainBtn.addEventListener("click", function () {
   breakFast.style.display = "none";
   main.style.display = "block";
-  beverage.style.display = "none";
-  drinks.style.display = "none";
-  desert.style.display = "none";
+
+  // beverage.style.display = "none";
+  // drinks.style.display = "none";
+  // desert.style.display = "none";
+
+  mainBtn.style.backgroundColor = "darkblue";
 
 
+  // colors
+  breakFastBtn.style.backgroundColor = "rgb(3, 121, 194)";
+});
+
+breakFastBtn.addEventListener("click", function () {
+  // Visible Containers
+  breakFast.style.display = "block";
+  main.style.display = "none";
+  // beverage.style.display = "none";
+  // drinks.style.display = "none";
+  // desert.style.display = "none";
+
+   // colors
+   breakFastBtn.style.backgroundColor = "darkblue";
+   mainBtn.style.backgroundColor = "rgb(3, 121, 194)";
 });
