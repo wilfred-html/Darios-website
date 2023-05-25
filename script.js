@@ -1,30 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let fadeElements = document.querySelectorAll(".fade-in");
-  let fadeTimeout;
+// document.addEventListener("DOMContentLoaded", function () {
+//   let fadeElements = document.querySelectorAll(".fade-in");
+//   let fadeTimeout;
 
-  function checkFadeElements() {
-    for (let i = 0; i < fadeElements.length; i++) {
-      let fadeElement = fadeElements[i];
-      let positionFromTop = fadeElement.getBoundingClientRect().top;
+//   function checkFadeElements() {
+//     for (let i = 0; i < fadeElements.length; i++) {
+//       let fadeElement = fadeElements[i];
+//       let positionFromTop = fadeElement.getBoundingClientRect().top;
 
-      if (positionFromTop - window.innerHeight <= 0) {
-        fadeElement.classList.add("show");
-      } else {
-        fadeElement.classList.remove("show");
-      }
-    }
-  }
+//       if (positionFromTop - window.innerHeight <= 0) {
+//         fadeElement.classList.add("show");
+//       } else {
+//         fadeElement.classList.remove("show");
+//       }
+//     }
+//   }
 
-  function scrollHandler() {
-    clearTimeout(fadeTimeout);
-    fadeTimeout = setTimeout(checkFadeElements, 5);
-  }
+//   function scrollHandler() {
+//     clearTimeout(fadeTimeout);
+//     fadeTimeout = setTimeout(checkFadeElements, 5);
+//   }
 
-  window.addEventListener("scroll", scrollHandler);
-  checkFadeElements();
-});
+//   window.addEventListener("scroll", scrollHandler);
+//   checkFadeElements();
+// });
 
 // container information
+
 const breakFast = document.querySelector(".breakfast-container");
 const main = document.querySelector(".main-container");
 const beverage = document.querySelector(".beverage-container");

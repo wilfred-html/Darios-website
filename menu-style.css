@@ -177,7 +177,6 @@ h2 {
   width: 100%; /* Ensure full width */
 }
 
-
 .menu-item .price {
   color: #687968;
   margin-top: 10px;
@@ -185,7 +184,7 @@ h2 {
 }
 .menu-column {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   margin-bottom: 30px;
 }
@@ -203,22 +202,26 @@ h2 {
 }
 
 .t-cs {
-  height: 80px;
+  height: 50px;
   background-color: #333; /* Adjust background color */
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem; /* Adjust font size */
+  font-size: 0.8rem; /* Adjust font size */
+  padding: 20px;
 }
 
 .t-cs a {
   text-decoration: none;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 5px;
+  transition: text-decoration 120ms;
 }
 
-
+.t-cs a:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 768px) {
   .stripe1 {
@@ -235,8 +238,9 @@ h2 {
   }
 
   .navigation {
+    /* Keep the existing styles for positioning */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 5px;
     font-size: 1.7rem;
   }
@@ -247,8 +251,13 @@ h2 {
     align-items: center;
     white-space: nowrap;
     padding: 12px;
-    background-color: rgb(3, 121, 194);
-    color: white;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .menu-column {
+    grid-template-columns: 1fr;
+    column-gap: 140px;
   }
 
   .menu-item {
@@ -259,11 +268,12 @@ h2 {
     font-size: 1.3rem;
     font-style: italic;
     width: 90%;
+    margin-top: 10px; /* Add margin to separate from the item name */
   }
 
   h1 {
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #333;
+    color: #333;
   }
 
   h1 a {
@@ -273,6 +283,7 @@ h2 {
   h2 {
     font-size: 2.4rem;
     margin-bottom: 40px;
+    color: #555;
   }
 
   .des-cat {
@@ -282,6 +293,7 @@ h2 {
 
   .des-cat .description {
     font-size: 1.5rem;
+    color: #555;
   }
 
   .des-cat2 {
@@ -309,6 +321,7 @@ h2 {
   .des-cat2 .description {
     font-size: 2.3rem;
     line-height: 30px;
+    color: #555;
   }
 
   .Darios-font {
@@ -318,7 +331,7 @@ h2 {
 
   .slant {
     font-family: "Cedarville Cursive", cursive;
-    color: rgb(3, 121, 194);
+    color: #007bff;
   }
 
   .upscale {
@@ -330,39 +343,98 @@ h2 {
 
 @media (min-width: 1024px) {
   .stripe1 {
-    border-right: 20px solid #c82a35;
+    border-right: 10px solid #c82a35;
   }
 
   .stripe2 {
-    border-right: 20px solid #f7f7f7;
-    margin-right: 10px;
+    border-right: 10px solid #f7f7f7;
+    margin: 0 10px;
   }
 
   .stripe3 {
-    border-right: 20px solid #008d44;
-    margin-right: 10px;
+    border-right: 10px solid #008d44;
   }
 
-  .menu-item {
-    font-size: 18px;
-    margin-bottom: 25px;
+  .navigation {
+    /* Keep the existing styles for positioning */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    font-size: 1.7rem;
   }
 
   .navigation a {
-    background-color: rgb(3, 121, 194);
-    color: white;
-    padding: 10px;
-    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .menu-item {
+    font-size: 1.6rem;
+  }
+
+  .menu-item .description {
+    font-size: 1.3rem;
+    font-style: italic;
+    width: 90%;
+    margin-top: 10px; /* Add margin to separate from the item name */
   }
 
   h1 {
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #333;
+    color: #333;
+  }
+
+  h1 a {
+    padding: 10px;
   }
 
   h2 {
+    font-size: 2.4rem;
     margin-bottom: 40px;
-    font-size: 1.9rem;
+    color: #555;
+  }
+
+  .des-cat {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+  .des-cat .description {
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+  .des-cat2 {
+    margin: 60px 0 90px 0;
+  }
+
+  .des2 {
+    transform: scale(1.2);
+  }
+
+  .des2 ul {
+    margin-bottom: 20px;
+  }
+
+  .li-3 {
+    text-decoration: underline;
+    margin: 20px 0 10px 0;
+    font-weight: normal;
+  }
+
+  .span-options {
+    font-size: 1rem;
+  }
+
+  .des-cat2 .description {
+    font-size: 2.3rem;
+    line-height: 30px;
+    color: #555;
   }
 
   .Darios-font {
@@ -372,13 +444,12 @@ h2 {
 
   .slant {
     font-family: "Cedarville Cursive", cursive;
-    color: rgb(3, 121, 194);
-    font-size: 1.9rem;
+    color: #007bff;
   }
 
-  .des-cat2 .description{
-    line-height: 40px;
+  .upscale {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 3px;
   }
 }
-
-

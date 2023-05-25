@@ -4,7 +4,7 @@
   font-family: "Hammersmith One", sans-serif;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -28,7 +28,7 @@
 
 .fade-in.show {
   opacity: 1;
-}
+} */
 
 img {
   pointer-events: none;
