@@ -4,31 +4,10 @@
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .box2-section2 {
   display: none;
 }
 
-.box2-section {
-  display: block;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.fade-in.show {
-  opacity: 1;
-} */
 
 img {
   pointer-events: none;

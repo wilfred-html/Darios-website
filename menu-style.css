@@ -54,8 +54,8 @@ h1 a {
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   margin-bottom: 20px;
 }
 
@@ -189,9 +189,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-.menu-column > div {
-  flex-basis: 280px;
-}
+
 
 .menu-NP {
   display: flex;
@@ -223,7 +221,7 @@ h2 {
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .stripe1 {
     border-right: 10px solid #c82a35;
   }
@@ -239,8 +237,7 @@ h2 {
 
   .navigation {
     /* Keep the existing styles for positioning */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 5px;
     font-size: 1.7rem;
   }
@@ -256,7 +253,7 @@ h2 {
   }
 
   .menu-column {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 140px;
   }
 
