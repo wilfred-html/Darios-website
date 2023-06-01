@@ -1,477 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 * {
-  margin: 0;
   padding: 0;
-  font-family: "Hammersmith One", sans-serif;
-  box-sizing: border-box; /* Add box-sizing property */
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.Darios-font {
-  font-family: "Rubik Bubbles", cursive;
+img {
+  object-fit: cover;
+  object-position: center;
 }
 
-h2 {
-  font-family: "Cedarville Cursive", cursive;
+.description {
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Qwigley, cursive;
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
 body {
-  /* font-family: Arial, sans-serif; */
-  background-color: #f5f5ef;
-  margin: 0;
-  padding: 0;
-  color: #333;
+  background: #fff;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 85%;
+  margin: 50px auto;
+  text-align: center;
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.container .title {
+  width: 60%;
+  margin: 0 auto 30px auto;
+}
+
+.container .title h2 {
+  font-family: "Lobster", cursive;
+  font-size: 1.625rem;
+  margin-bottom: 20px;
+}
+
+.container .title p {
+  color: #333;
+  font-size: 14px;
+}
+
+.content .menu-default {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.content .menu-default li,
+.menu-default a {
+  color: #000;
+  margin: 0 15px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+}
+
+.content .menu-default li::after,
+.menu-default a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #65bff7;
+  transition: 0.4s ease-in-out;
+}
+
+.content .menu-default li:hover::after,
+.menu-default a:hover::after {
+  width: 100%;
+}
+
+.content .menu-default li:nth-child(2) {
+  color: #65bff7;
+}
+
+.menu-container,
+.menu-container .menu-navigation {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
 }
 
 h1 {
-  text-align: center;
-  border: 1px solid black;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-h1 a {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-decoration: underline #65bff7;
+  font-family: "Qwigley", cursive;
+  letter-spacing: 8px;
+  font-weight: 400;
+  font-size: 2.7rem;
   width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-
-.Darios-font {
-  font-family: "Rubik Bubbles", cursive;
-  font-size: 2.4rem; /* Adjust font size */
-  margin-right: 8px;
-  color: rgb(37, 37, 37);
-}
-
-.slant {
-  font-family: "Cedarville Cursive", cursive;
-  color: #53835f; 
-  font-size: 1.9rem; /* Adjust font size */
-  padding-top: 10px;
-}
-
-.navigation {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 20px;
-}
-
-.navigation a {
-  margin: 0 0px;
-  text-decoration: none;
-  padding: 9px 12px;
-  border-radius: 5px;
-  background-color: #ddd;
-  transition: background-color 0.3s;
-  margin-bottom: 5px;
-  background-color: #53835f; /* Adjust background color */
-  color: #fff;
-  font-size: 1.7rem; /* Adjust font size */
-}
-
-.navigation a:hover {
-  background-color: #3e6448;
-}
-
-.des-cat h2 {
-  margin: 8px 0;
-}
-
-.des-cat,
-.des-cat2 {
-  text-align: center;
-  color: #0056b3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.des-cat .description {
-  font-style: italic;
-  font-size: 1.4rem; /* Adjust font size */
-  color: rgb(240, 240, 240);
-}
-
-.des-cat2 {
-  margin: 0px 0 60px 0;
-}
-
-.des-cat2 .description {
-  text-align: center;
-  font-size: 1.6rem; /* Adjust font size */
-  font-family: "Cedarville Cursive", cursive;
-  line-height: 1.8rem; /* Adjust line height */
-  color: rgb(240, 240, 240);
-  background-color: #c82a35;
-  border-radius: 20px;
-  padding: 30px;
-  margin: 0 auto;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 30px;
-  color: #555;
-  font-family: "Cedarville Cursive", cursive;
-  text-decoration: underline;
-  font-size: 2rem; /* Adjust font size */
 }
 
 .omelette-list {
-  text-align: start;
+  background-color: white;
+  color: black;
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
-.omelette-list ul {
-  list-style: none;
-  text-align: center;
-  padding: 30px;
-  font-size: 1.6rem; /* Adjust font size */
+.omelette-list li {
+  margin-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  /* letter-spacing: 4px; */
 }
 
-.menu-category {
-  margin-bottom: 30px;
+.upscale {
+  font-size: 0.51rem;
 }
 
-.menu-item {
+.box_flex {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 32%;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
   margin-bottom: 20px;
-  border-bottom: 1px dashed #ccc;
-  padding-bottom: 10px;
-} 
+  animation: movement 1s ease-in-out;
+  box-shadow: inset 0 0 2px lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-.menu-item .name {
-  font-weight: bold;
-  margin-right: 10px;
-  flex: 1 1 auto; /* Allow shrinking and growing */
+.box img {
+  pointer-events: none;
+}
+
+.blacked-h1-container {
+  background-color: black;
+  color: white;
+}
+
+.blacked-box {
+  margin-top: 20px;
+  cursor: default;
+}
+
+.blacked-box:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.box .box_img {
+  /* width: 35%; */
+  height: 130px;
+  width: 130px;
+  text-align: center;
+  background-color: aqua;
+}
+
+.box_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .text {
+  text-align: left;
   width: 60%;
-  letter-spacing: 1px;
-  font-size: 1.6rem;
-  color: #333;
+  height: 130px;
+  padding-left: 10px;
 }
 
-.span-options {
-  font-size: 1rem; /* Adjust font size */
-  margin: 0 10px;
-  font-style: italic;
-  color: #777;
-  font-weight: bold;
+.text h3 {
+  text-transform: capitalize;
 }
 
-.menu-item svg {
-  width: 25px;
-  height: 25px;
-  fill: #777;
-  margin-left: auto;
-  fill: rgb(252, 147, 109);
+.text hr {
+  width: 50px;
+  background: #d4a373;
+  height: 3px;
+  margin: 5px 0 10px 0;
 }
 
-.options2 svg {
-  margin: 0;
+.text section {
+  font-weight: 600;
   margin-bottom: -5px;
 }
 
-.menu-NP .description {
-  color: #555;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  width: 100%; /* Ensure full width */
+.text .stars {
+  margin-bottom: -2px;
 }
 
-.menu-item .price {
-  color: #777e77;
-  margin-top: 10px;
-  font-size: 1.2rem;
+.text .stars i {
+  font-size: 13px;
+  color: #d4a373;
 }
 
-.menu-column {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  margin-bottom: 30px;
-  margin-top: 40px;
+.text article {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-family: monospace;
+  color: gray;
+  margin-top: 5px;
 }
 
-.menu-NP {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; /* Align items to the bottom */
-  margin-bottom: 10px;
-  width: 100%; /* Ensure full width */
+.text .drink-article {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #008d44;
+}
+
+.length {
+  background-color: #65bff7;
+  height: 400px;
 }
 
 .t-cs {
-  height: 50px;
-  background-color: #333; /* Adjust background color */
-  color: #fff;
+  height: 35px;
+  background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem; /* Adjust font size */
-  padding: 20px;
+  color: lightgray;
+  padding-left: 10px;
+  font-size: 0.8rem;
 }
 
 .t-cs a {
   text-decoration: none;
-  color: #fff;
-  padding: 5px 5px;
-  transition: text-decoration 120ms;
+  color: lightgray;
+  padding: 0 5px;
 }
 
-.t-cs a:hover {
-  text-decoration: underline;
+.stripe1 {
+  border-right: 12px solid #c82a35;
 }
 
-/* handles the toastie ul */
-.toasties-list, .omelette-list, .rossellas-des {
-  background-color: #53835f;
-  border-radius: 20px;
-  margin: 0 auto;
+.stripe2 {
+  border-right: 12px solid #f7f7f7;
+  margin-right: 10px;
 }
 
-.toasties-list ul li,  .omelette-list ul li{
-  padding: 0px 0px 20px;
-  font-size: 1.3rem;
-  color: rgb(240, 240, 240);
+.stripe3 {
+  border-right: 12px solid #008d44;
+  margin-right: 10px;
 }
 
-.rossellas-des {
-  color: rgb(240, 240, 240);
-  padding: 20px;
+.box {
+  display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .stripe1 {
-    border-right: 10px solid #c82a35;
+.Breakfast {
+  display: flex;
+}
+
+.drink-list-container,
+.dark-mode {
+  color: white;
+  padding: 0px 16px;
+  padding-top: 40px;
+}
+
+.drink-list-container .box {
+  background-color: #025385;
+  min-height: 210px;
+  align-items: center;
+}
+
+@keyframes movement {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 991px) {
+  .container .title {
+    width: 80%;
+  }
+  .box .box_img {
+    text-align: left;
+  }
+  .box_img img {
+    width: 170px;
+    height: 170px;
+  }
+  .box {
+    width: 100%;
+  }
+  .box .text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    max-width: 100%;
+    padding: 0px;
   }
 
-  .stripe2 {
-    border-right: 10px solid #f7f7f7;
-    margin: 0 10px;
+  .box {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
   }
 
-  .stripe3 {
-    border-right: 10px solid #008d44;
+  .box .box_img {
+    width: 100%;
   }
 
-  .navigation {
-    /* Keep the existing styles for positioning */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
-    font-size: 1.7rem;
+  .box_img img {
+    width: 100%;
   }
 
-  .navigation a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    padding: 12px;
-    color: #fff;
+  .box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .menu-column {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 140px;
+  .box .text {
+    width: 100%;
+    height: 130px;
+    padding-left: 0;
+    margin-top: 8px;
   }
 
-  .menu-item {
-    font-size: 1.6rem;
+  .text article {
+    line-height: 25px;
   }
 
-  .menu-item .description {
-    font-size: 1.3rem;
-    font-style: italic;
-    width: 90%;
-    margin-top: 10px; /* Add margin to separate from the item name */
+  .content .disapear {
+    display: none;
   }
 
-  h1 {
-    border: 1px solid #333;
-    color: #333;
+  .burger-menu {
+    display: block;
   }
 
-  h1 a {
+  .length {
+    background-color: transparent;
+    min-height: 540px;
     padding: 10px;
+    margin: 0;
   }
 
-  h2 {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-    color: #555;
+  .omelette-list {
+    height: 100%;
+    font-size: 1rem;
+    line-height: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
-  .des-cat {
-    margin-top: 60px;
-    margin-bottom: 70px;
+  .omelette-list li {
+    width: 100%;
+    font-weight: 400;
   }
 
-  .des-cat .description {
-    font-size: 1.5rem;
-  }
-
-  .des-cat2 {
-    margin: 60px 0 90px 0;
-  }
-
-
-  .omelette-list ul {
+  .menu-navigation {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
     margin-bottom: 20px;
   }
 
-  .li-3 {
-    text-decoration: underline;
-    margin: 20px 0 10px 0;
-    font-weight: normal;
-  }
-
-  .span-options {
-    font-size: 1rem;
-  }
-
-  .des-cat2 .description {
-    font-size: 2.3rem;
-    line-height: 30px;
-    color: rgb(240, 240, 240);
-  }
-
-  .Darios-font {
-    font-family: "Rubik Bubbles", cursive;
-    font-size: 2.4rem;
-  }
-
-  .slant {
-    font-family: "Cedarville Cursive", cursive;
-    color: #007bff;
-  }
-
-  .upscale {
-    font-size: 1.3rem;
-    font-style: italic;
-    margin-top: 3px;
-  }
-
- 
-}
-
-@media (min-width: 1024px) {
-  .stripe1 {
-    border-right: 12px solid #c82a35;
-  }
-
-  .stripe2 {
-    border-right: 12px solid #f7f7f7;
-    margin-right: 10px;
-  }
-
-  .stripe3 {
-    border-right: 12px solid #008d44;
-    margin-right: 10px;
-
-  }
-
-  .navigation {
-    /* Keep the existing styles for positioning */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
-    font-size: 1.7rem;
-  }
-
-  .navigation a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    padding: 8px;
-    color: #fff;
-  }
-
-  .menu-item {
-    font-size: 1.6rem;
-  }
-
-  .menu-item .description {
-    font-size: 1.3rem;
-    font-style: italic;
-    width: 90%;
-    margin-top: 10px; /* Add margin to separate from the item name */
-  }
-
-  .menu-column {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 130px;
-  }
-
-  h1 {
-    border: 1px solid #333;
-    color: #333;
-  }
-
-  h1 a {
+  .menu-navigation li,
+  .menu-navigation .li-a {
+    width: 100%;
+    text-align: start;
+    border: 1px solid black;
     padding: 10px;
+    margin-bottom: 8px;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
   }
 
-  h2 {
-    font-size: 2.4rem;
-    margin-bottom: 40px;
-    color: #555;
+  .li-a {
+    height: 45px;
   }
 
-  .des-cat {
-    margin-top: 60px;
-    margin-bottom: 70px;
+  .menu-navigation .li-a a {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 
-  .des-cat .description {
-    font-size: 1.5rem;
-    
+  .menu-navigation li:active,
+  .menu-navigation .li-a:active {
+    background-color: rgba(236, 236, 236, 0.753);
   }
 
-  .des-cat2 {
-    margin: 60px 0 90px 0;
+  .burger-menu {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+  }
+  .drink-list-container {
+    background-color: rgb(31, 31, 31);
+    padding: 0px 16px;
+    padding-top: 40px;
   }
 
-  .omelette-list ul {
-    margin-bottom: 20px;
-  }
-
-  .li-3 {
-    text-decoration: underline;
-    margin: 20px 0 10px 0;
-    font-weight: normal;
-  }
-
-  .span-options {
-    font-size: 1rem;
-  }
-
-  .des-cat2 .description {
-    font-size: 2.3rem;
-    line-height: 30px;
-    color: #f0f0f0;
-  }
-
-  .Darios-font {
-    font-family: "Rubik Bubbles", cursive;
-    font-size: 2.4rem;
-  }
-
-  .slant {
-    font-family: "Cedarville Cursive", cursive;
-  }
-
-  .upscale {
-    font-size: 1.3rem;
-    font-style: italic;
-    margin-top: 3px;
+  .drink-list-container .box {
+    background-color: black;
+    border-radius: 10px;
   }
 }

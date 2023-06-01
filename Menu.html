@@ -1,759 +1,1313 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Menu</title>
+
+    <title>Restaurant</title>
     <link rel="stylesheet" href="menu-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Heebo:wght@300&family=Rubik+Bubbles&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Qwigley&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="stripe1">
-      <div class="stripe2">
-        <div class="stripe3">
-          <div class="container">
-            <h1>
-              <a href="index.html">
-                <span class="Darios-font">Dario's</span>
-                <span class="slant">Cafe'</span>
-              </a>
-            </h1>
-            <div class="navigation">
-              <a class="breakfast-btn" href="#soft-drinks">Breakfast</a>
-              <a class="main-btn" href="#soft-drinks">Mains</a>
-              <a href="#soft-drinks">Dolci</a>
-              <a href="#soft-drinks">Beverages</a>
-              <a href="#soft-drinks">Drinks</a>
-            </div>
+  <body class="body1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="burger-menu bi bi-list"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+      />
+    </svg>
 
-            <!-- contains breakfast menu -->
-            <div class="breakfast-container">
-              <!-- Fresh bakes -->
-              <div class="menu-category">
-                <h2>Fresh Baked</h2>
-                <div class="menu-column">
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Classic home baked croissant</div>
-                      <div class="price">R27</div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        Home Baked Chocolate / Almond Croissant
-                      </div>
-                      <div class="price">R38</div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Assorted home bakes Muffins</div>
-                      <div class="price">R32</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Signature Breakfast -->
-              <div class="menu-category">
-                <div class="des-cat">
-                  <h2>Signature Breakfast</h2>
-                  <div class="description">
-                    (Extra Toast Opstions: Sour Dough, Health bread, Rye)
-                    R4/Slice
-                  </div>
-                </div>
-
-                <div class="menu-column">
-                  <!-- Bacon and EGG ROll -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">BACON & EGG ROLL</div>
-                      <div class="price">R59</div>
-                    </div>
-                    <div class="description">
-                      Crispy Portugese roll . Easy over Egg . Bacon
-                    </div>
-                  </div>
-
-                  <!-- EGG in purgatory -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">EGG IN PURGATORY</div>
-                      <div class="price">R88</div>
-                    </div>
-                    <div class="description">
-                      Poached Eggs . Bolognese Sauce . Toasted Bruchetta
-                    </div>
-                  </div>
-
-                  <!-- CHICKEN CAESAR -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">CHICKEN CAESAR</div>
-                      <div class="price">R90</div>
-                    </div>
-                    <div class="description">
-                      Chicken &bull; Cos Lettuce &bull; Tomato &bull; Croutons
-                      &bull; Caesar Dressing
-                    </div>
-                  </div>
-
-                  <!-- PINCIO -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PINCIO</div>
-                      <div class="price">R56</div>
-                    </div>
-                    <div class="description">One Egg & Bacon on Toast</div>
-                  </div>
-
-                  <!-- Popolo -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">POPOLO</div>
-                      <div class="price">R91</div>
-                    </div>
-                    <div class="description">
-                      Two Eggs . Bacon . Pork or Beef Sausage Tomato . Toast
-                    </div>
-                  </div>
-
-                  <!-- Monte Pollino -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">MONTE POLLINO</div>
-                      <div class="price">R99</div>
-                    </div>
-                    <div class="description">
-                      Two Eggs . Bacon . Grilled Tomato . Homemade Potato Rost
-                    </div>
-                  </div>
-
-                  <!-- Smashed avo -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        SMASHED AVO
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewbox="0 0 512 512"
-                        >
-                          <path
-                            d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="price">R95</div>
-                    </div>
-                    <div class="description">
-                      Avocado Pear . Grilled Tomato . Rocket. Two Poached Eggs
-                      On Toast (2)
-                    </div>
-                  </div>
-
-                  <!-- Darios Choice -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">DARIO'S CHOICE</div>
-                      <div class="price">R131</div>
-                    </div>
-                    <div class="description">
-                      Stacked Smoked Salmon . Cream Cheese . Cucumber . Onion .
-                      Homemade Potato Roast! (2)
-                    </div>
-                  </div>
-                </div>
-
-                <div class="des-cat2">
-                  <div class="description">
-                    Welcome to Hout Bay's most beloved italian cafes Website.
-                    Here we are passionate about three things ... faily Real
-                    Food Friends Oh yes, and Italian motors ofcourse. Come thru,
-                    enjoy our vibe & hospitality and Buon Appetito !
-                  </div>
-                </div>
-              </div>
-
-              <!-- Healthy -->
-              <div class="menu-category">
-                <h2>Healthy</h2>
-                <div class="menu-column">
-                  <!-- Grande Granola -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        GRANDE GRANOLA
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewbox="0 0 512 512"
-                        >
-                          <path
-                            d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="price">R85</div>
-                    </div>
-                    <div class="description">
-                      Home made Granola . Artisan Yoghurt . Fresh Fruit
-                    </div>
-                  </div>
-
-                  <!-- Chia Oats & Banana Bowl -->
-                  <div class="menu-item menu-chia">
-                    <div class="menu-NP">
-                      <div class="name">
-                        <span class="options2"
-                          >CHIA OATS & BANANA BOWL
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewbox="0 0 512 512"
-                          >
-                            <path
-                              d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                            />
-                          </svg>
-                        </span>
-                        <span class="span-options"
-                          >(ADD ALMOND MILK / Oats / Chia Seed . Banana)</span
-                        >
-                      </div>
-                      <div class="price">R55</div>
-                    </div>
-                    <div class="description">
-                      Add: Peanut Butter .10 | Raisins .10
-                    </div>
-                  </div>
-
-                  <!-- Verde -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">VERDE</div>
-                      <div class="price">R95</div>
-                    </div>
-                    <div class="description">
-                      Baked Beans . Spinach . Rocket . Tomato . Onion . Potato
-                      Roast
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Eggs Benedict -->
-              <div class="menu-category">
-                <div class="des-cat">
-                  <h2>Eggs Benedict</h2>
-                  <div class="description">
-                    Poached Eggs . English Muffins . Hollandaise Sauce
-                  </div>
-                </div>
-                <div class="menu-column">
-                  <!-- Spinach eggs benedict -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">SPINACH EGGS BENEDICT</div>
-                      <div class="price">R83</div>
-                    </div>
-                  </div>
-
-                  <!-- Ham eggs benedict -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">HAM EGGS BENEDICT</div>
-                      <div class="price">R89</div>
-                    </div>
-                  </div>
-
-                  <!-- Bacon eggs benedict -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">BACON EGGS BENEDICT</div>
-                      <div class="price">R99</div>
-                    </div>
-                  </div>
-
-                  <!-- Salmon eggs benedict -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">SALMON EGGS BENEDICT</div>
-                      <div class="price">R126</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Omelette -->
-              <div class="menu-category">
-                <div class="des-cat">
-                  <h2>Omelette</h2>
-                  <div class="description omelette-list">
-                    <ul>
-                      <li style="margin-top: 0">
-                        Three egg Omelette with toasts & preserves
-                      </li>
-                      <li class="li-3">Choose Any Two Fillings:</li>
-                      <li class="upscale">
-                        &bull; Spinach Mushrooms &bull; Onions &bull; Tomato
-                        &bull; Cheddar Cheese
-                      </li>
-                      <li class="upscale">
-                        Add Extra: Salmon .20 / Bacon .12 / Avo . Feta . Ham . 8
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="menu-column">
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name"></div>
-
-                      <div class="price omelette-no">R86</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Sweet -->
-              <div class="menu-category">
-                <h2>Sweet</h2>
-                <div class="menu-column">
-                  <!-- Home made banana bread -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">HOME MADE BANANA BREAD</div>
-                      <div class="price">R35</div>
-                    </div>
-                    <div class="description">With Butter</div>
-                  </div>
-
-                  <!-- Banana bread french toast -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">BANANA BREAD FRENCH TOAST</div>
-                      <div class="price">R82</div>
-                    </div>
-                    <div class="description">
-                      Bacon &bull; Maple Style Syrup
-                    </div>
-                  </div>
-
-                  <!-- Pancaka -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PANCAKE</div>
-                      <div class="price">R55</div>
-                    </div>
-                    <div class="description">
-                      Three cinnamon / sugar pancakes &bull; Maple Style Syrup
-                    </div>
-                  </div>
-
-                  <!-- Nutella pancakes -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">NUTELLA PANCAKES</div>
-                      <div class="price">R65</div>
-                    </div>
-                    <div class="description">Three Pancake . Nutella</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- contains Main dishes menu-->
-            <div class="main-container">
-              <!-- Toasties -->
-              <div class="menu-category">
-                <div class="des-cat">
-                  <h2>Toasties</h2>
-                  <div class="description omelette-list toasties-list">
-                    <ul>
-                      <li>On White or Whole-wheat bread</li>
-                      <li>Extra Toast Options - Sour Dough - Rye R4/slice</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="menu-column">
-                  <!-- Cheese and Tomato -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        Cheese & Tomato
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewbox="0 0 512 512"
-                        >
-                          <path
-                            d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="price">R45</div>
-                    </div>
-                  </div>
-
-                  <!-- Ham & Cheese -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Ham & Cheese</div>
-                      <div class="price">R48</div>
-                    </div>
-                  </div>
-
-                  <!-- Bacon & Egg -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Bacon & Egg</div>
-                      <div class="price">R50</div>
-                    </div>
-                  </div>
-
-                  <!-- Chicken Mayo -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Chicken Mayo</div>
-                      <div class="price">R52</div>
-                    </div>
-                  </div>
-
-                  <!-- Tuna Mayo -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Tuna Mayo</div>
-                      <div class="price">R52</div>
-                    </div>
-                  </div>
-
-                  <!-- Emmental & Gherkin -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Emmental & Gherkin</div>
-                      <div class="price">R48</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Salads -->
-              <div class="menu-category">
-                <h2>Salads</h2>
-
-                <div class="menu-column">
-                  <!-- CAPRESE -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        CAPRESE
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewbox="0 0 512 512"
-                        >
-                          <path
-                            d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="price">R85</div>
-                    </div>
-                    <div class="description">
-                      Fior di latte Mozzarella &bull; Tomato &bull; Avo &bull;
-                      Pesto
-                    </div>
-                  </div>
-
-                  <!-- GREEK -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        GREEK
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewbox="0 0 512 512"
-                        >
-                          <path
-                            d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="price">R78</div>
-                    </div>
-                    <div class="description">
-                      Tomato &bull; Cucumber &bull; Olives &bull; Onion &bull;
-                      Feta (no Lettuce)
-                    </div>
-                  </div>
-
-                  <!-- CHICKEN CAESAR -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">CHICKEN CAESAR</div>
-                      <div class="price">R90</div>
-                    </div>
-                    <div class="description">
-                      Chicken &bull; Cos Lettuce &bull; Tomato &bull; Croutons
-                      &bull; Caesar Dressing
-                    </div>
-                  </div>
-
-                  <!-- SALMON -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">SALMON 40g</div>
-                      <div class="price">R130</div>
-                    </div>
-                    <div class="description">
-                      Salmon &bull; Greens &bull; Rocket &bull; Olives &bull;
-                      Cucumber &bull; Caper Berries Artichoke
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Rossella's Piadine -->
-              <div class="menu-category">
-                <div class="des-cat">
-                  <h2>Rossella's Piadine</h2>
-                  <div class="description rossellas-des">
-                    Rossella's homemade fold over faltbread with fillings -
-                    served with your choice of Salad OR Sweet potato Fries OR
-                    Chips
-                  </div>
-                </div>
-
-                <div class="menu-column">
-                  <!-- PIADINA CAPRESE -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        PIADINA CAPRESE
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewbox="0 0 512 512"
-                        >
-                          <path
-                            d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                          />
-                        </svg>
-                      </div>
-                      <div class="price">R98</div>
-                    </div>
-                    <div class="description">
-                      Mozzarella &bull; Basil &bull; Tomato &bull; Pesto &bull;
-                      Avo
-                    </div>
-                  </div>
-
-                  <!-- PIDINA SPINACH -->
-                  <div class="menu-item menu-chia">
-                    <div class="menu-NP">
-                      <div class="name">
-                        <span class="options2"
-                          >PIDINA SPINACH
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewbox="0 0 512 512"
-                          >
-                            <path
-                              d="M298.2 156.6C245.5 130.9 183.7 146.1 147.1 189.4l55.27 55.31c6.25 6.25 6.25 16.33 0 22.58c-3.127 3-7.266 4.605-11.39 4.605s-8.068-1.605-11.19-4.605L130.3 217l-128.1 262.8c-2.875 6-3 13.25 0 19.63c5.5 11.12 19 15.75 30 10.38l133.6-65.25L116.7 395.3c-6.377-6.125-6.377-16.38 0-22.5c6.25-6.25 16.37-6.25 22.5 0l56.98 56.98l102-49.89c24-11.63 44.5-31.26 57.13-57.13C385.5 261.1 359.9 186.8 298.2 156.6zM390.2 121.8C409.7 81 399.7 32.88 359.1 0c-50.25 41.75-52.51 107.5-7.875 151.9l8 8C404.5 204.5 470.4 202.3 512 152C479.1 112.3 430.1 102.3 390.2 121.8z"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="price">R95</div>
-                    </div>
-                    <div class="description">
-                      Spinach &bull; Mushrooms &bull; Mozzarella
-                    </div>
-                  </div>
-
-                  <!-- PIADINA HAM -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PIADINA HAM</div>
-                      <div class="price">R99</div>
-                    </div>
-                    <div class="description">
-                      Gypsy Ham &bull; Mozzarella &bull; Tomato
-                    </div>
-                  </div>
-
-                  <!-- PIADINA PROSCITTO -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PIADINA PROSCITTO</div>
-                      <div class="price">R115</div>
-                    </div>
-                    <div class="description">Proscultto &bull; Mozzarella</div>
-                  </div>
-
-                  <!-- PIADINA INVOLTINO -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PIADINA INVOLTINO</div>
-                      <div class="price">R118</div>
-                    </div>
-                    <div class="description">
-                      Chicken Schintzel &bull; Avo &bull; Rocket &bull;
-                      Mozzarello &bull; Sweet chilli
-                    </div>
-                  </div>
-
-                  <!-- PIADINA SALAME -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PIADINA SALAME</div>
-                      <div class="price">R115</div>
-                    </div>
-                    <div class="description">
-                      Salame &bull; Emmental Cheese &bull; Gherkin
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Mains -->
-              <div class="menu-category">
-                <h2>Mains</h2>
-
-                <div class="menu-column">
-                  <!-- PARIMIGIANA DI MELANZANE -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">PARIMIGIANA DI MELANZANE</div>
-                      <div class="price">R110</div>
-                    </div>
-                  </div>
-
-                  <!-- RISOTTO - Zafferano -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">RISOTTO - Zafferano</div>
-                      <div class="price">R135</div>
-                    </div>
-                  </div>
-
-                  <!-- Porcini Mushroom -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">Porcini Mushroom</div>
-                      <div class="price">R135</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Burgers -->
-              <div class="menu-category">
-                <div class="des-cat">
-                  <h2>Burgers</h2>
-                  <div class="description">
-                    Served with your choice of Salad OR Sweet potato Fries OR
-                    Chips
-                  </div>
-                </div>
-                <div class="menu-column">
-                  <!-- THE CLASSIC -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">THE CLASSIC</div>
-                      <div class="price">102</div>
-                    </div>
-                  </div>
-
-                  <!-- CHESE BURGER -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">CHESE BURGER</div>
-                      <div class="price">R110</div>
-                    </div>
-                  </div>
-
-                  <!-- BACON & AVO BURGER -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">BACON & AVO BURGER</div>
-                      <div class="price">R135</div>
-                    </div>
-                  </div>
-
-                  <!-- CHICKEN SCHNITZEL BURGER-->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">CHICKEN SCHNITZEL BURGER</div>
-                      <div class="price">R120</div>
-                    </div>
-                  </div>
-
-                  <!-- BEETROOT & BAOBAB BURGER-->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">BEETROOT & BAOBAB BURGER</div>
-                      <div class="price">R110</div>
-                    </div>
-                  </div>
-
-                  <!-- GOURMET JALAPENOBURGER -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">GOURMET JALAPENOBURGER</div>
-                      <div class="price">R150</div>
-                    </div>
-                    <div class="description">
-                      Bacon &bull; Egg &bull; Cheddar &bull; Jalapeno
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Light Dishes -->
-              <div class="menu-category">
-                <h2>Light Dishes</h2>
-                <div class="menu-column">
-                  <!-- GRILLED CHICKEN -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">
-                        GRILLED CHICKEN BREAST OR SCHNITZEL with sauteed Veg or
-                        Salad or Chips
-                      </div>
-                      <div class="price">R125</div>
-                    </div>
-                  </div>
-
-                  <!-- BANGERS & MASH -->
-                  <div class="menu-item">
-                    <div class="menu-NP">
-                      <div class="name">BANGERS & MASH</div>
-                      <div class="price">R120</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Add more menu categories and items here as needed -->
-          </div>
+    <div class="container">
+      <div class="title">
+        <h2>Dario's Menu</h2>
+        <div class="description">
+          Welcome to Hout Bay's most beloved italian cafe's Website menu. Here
+          we are passionate about three things ... faily Real Food Friends Oh
+          yes, and Italian motors ofcourse. Come thru, enjoy our vibe &amp;
+          hospitality and Buon Appetito !
         </div>
       </div>
-    </div>
 
-    <div class="t-cs">
-      <div class="sigebrand">
-        Powered by<a href="#">Sige Collection</a>| © Dario's Cafe' 2023
+      <div class="content">
+        <div class="menu-default list disapear">
+          <a href="index.html">Home</a>
+          <li data-color=".Breakfast">Breakfast</li>
+          <li data-color=".LoveAndPasta">Love &amp; Pasta</li>
+          <li data-color=".Drinks">Drinks</li>
+          <li data-color=".Soft-drinks">Soft Drinks</li>
+          <li data-color=".Dolci">Dolci</li>
+        </div>
+
+        <div class="menu-container">
+          <div class="list menu-navigation">
+            <div class="li-a"><a href="index.html">Home</a></div>
+            <li data-color=".Breakfast">Breakfast</li>
+            <li data-color=".LoveAndPasta">Love &amp; Pasta</li>
+            <li data-color=".Drinks">Drinks</li>
+            <li data-color=".Soft-drinks">Soft Drinks</li>
+            <li data-color=".Dolci">Dolci</li>
+          </div>
+        </div>
+
+        <!-- BREAKFAST --------------------------------------------------------------------->
+        <div class="breakfast-container">
+          <div class="box Breakfast" style="width: 100%">
+            <h1>Fresh Bakes</h1>
+          </div>
+          <div class="box_flex">
+            <!-- CLASSIC HOME BAKED CROISSANT... -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Homemade-Baked-Croissants.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CLASSIC HOME BAKED CROISSANT</h3>
+                <hr />
+                <section>R27.00</section>
+              </div>
+            </div>
+            <!-- Home Baked Chocolate / Almond Croissant -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Home Baked Chocolate / Almond Croissant</h3>
+                <hr />
+                <section>R38.00</section>
+              </div>
+            </div>
+            <!-- Assorted home bakes Muffins -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/BAKED-MUFFINS.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>ASSORTED HOME BAKED MUFFINS</h3>
+                <hr />
+                <section>R32.00</section>
+              </div>
+            </div>
+          </div>
+          <div class="box Breakfast" style="width: 100%">
+            <h1>Signature Breakfast</h1>
+          </div>
+          <div class="box_flex">
+            <!-- BACON & EGG ROLL -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BACON &amp; EGG ROLL</h3>
+                <hr />
+                <section>R59.00</section>
+                <article>Crispy Portugese roll • Easy over Egg • Bacon</article>
+              </div>
+            </div>
+            <!-- EGG IN PURGATORY -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>EGG IN PURGATORY</h3>
+                <hr />
+                <section>R88.00</section>
+                <article>
+                  Poached Eggs • Bolognese Sauce • Toasted Bruchetta
+                </article>
+              </div>
+            </div>
+            <!-- CHICKEN CAESAR -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CHICKEN CAESAR</h3>
+                <hr />
+                <section>R90.00</section>
+                <article>
+                  Chicken • Cos Lettuce • Tomato • Croutons • Caesar Dressing
+                </article>
+              </div>
+            </div>
+            <!-- PINCIO -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PINCIO</h3>
+                <hr />
+                <section>R56.00</section>
+                <article>One Egg &amp; Bacon on Toast</article>
+              </div>
+            </div>
+            <!-- POPOLO -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>POPOLO</h3>
+                <hr />
+                <section>R91.00</section>
+                <article>
+                  Two Eggs • Bacon • Pork or Beef Sausage Tomato • Toast
+                </article>
+              </div>
+            </div>
+            <!-- MONTE POLLINO -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>MONTE POLLINO</h3>
+                <hr />
+                <section>R99.00</section>
+                <article>
+                  Two Eggs • Bacon • Grilled Tomato • Homemade Potato Rost
+                </article>
+              </div>
+            </div>
+            <!-- SMASHED AVO -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SMASHED AVO</h3>
+                <hr />
+                <section>R95.00</section>
+                <article>
+                  Avocado Pear • Grilled Tomato • Rocket• Two Poached Eggs On
+                  Toast (2)
+                </article>
+              </div>
+            </div>
+            <!-- DARIO'S CHOICE -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>DARIO'S CHOICE</h3>
+                <hr />
+                <section>R131.00</section>
+                <article>
+                  Stacked Smoked Salmon • Cream Cheese • Cucumber • Onion •
+                  Homemade Potato Roast! (2)
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="box Breakfast" style="width: 100%">
+            <h1>Healthy</h1>
+          </div>
+          <div class="box_flex">
+            <!-- GRANDE GRANOLA -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>GRANDE GRANOLA</h3>
+                <hr />
+                <section>R85.00</section>
+                <article>
+                  Home made Granola • Artisan Yoghurt • Fresh Fruit
+                </article>
+              </div>
+            </div>
+            <!-- CHIA OATS & BANANA BOWL -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CHIA OATS &amp; BANANA BOWL</h3>
+                <hr />
+                <section>R55.00</section>
+                <article>
+                  Poached Eggs • Bolognese Sauce • Toasted Bruchetta
+                </article>
+              </div>
+            </div>
+            <!-- VERDE -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CVERDE</h3>
+                <hr />
+                <section>R95.00</section>
+                <article>
+                  Baked Beans • Spinach • Rocket • Tomato • Onion • Potato Roast
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="box Breakfast" style="width: 100%">
+            <h1>Eggs Benedict</h1>
+          </div>
+          <div class="box_flex">
+            <!-- SPINACH EGGS BENEDICT -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SPINACH EGGS BENEDICT</h3>
+                <hr />
+                <section>R83.00</section>
+                <article>
+                  Home made Granola • Artisan Yoghurt • Fresh Fruit
+                </article>
+              </div>
+            </div>
+            <!-- HAM EGGS BENEDICTL -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>HAM EGGS BENEDICT</h3>
+                <hr />
+                <section>R89.00</section>
+                <article>
+                  Poached Eggs • Bolognese Sauce • Toasted Bruchetta
+                </article>
+              </div>
+            </div>
+            <!-- BACON EGGS BENEDICT -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BACON EGGS BENEDICT</h3>
+                <hr />
+                <section>R99.00</section>
+                <article>
+                  Chicken • Cos Lettuce • Tomato • Croutons • Caesar Dressing
+                </article>
+              </div>
+            </div>
+            <!-- SALMON EGGS BENEDICT -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SALMON EGGS BENEDICT</h3>
+                <hr />
+                <section>R126.00</section>
+                <article>One Egg &amp; Bacon on Toast</article>
+              </div>
+            </div>
+          </div>
+          <div class="box Breakfast" style="width: 100%">
+            <h1>Omelete</h1>
+          </div>
+          <div class="box Breakfast length" style="width: 100%">
+            <div class="omelette-list">
+              <li style="margin-top: 0">
+                Three egg Omelette with toasts &amp; preserves
+              </li>
+              <li class="li-3" style="font-weight: 600">
+                Choose Any Two Fillings:
+              </li>
+              <li>Spinach Mushrooms • Onions • Tomato • Cheddar Cheese</li>
+              <li class="upscale">
+                Add Extra: Salmon = R20 | Bacon = R12 | Avo &bull; Feta • Ham =
+                R8
+              </li>
+            </div>
+          </div>
+          <div class="box Breakfast" style="width: 100%">
+            <h1>Sweet</h1>
+          </div>
+          <div class="box_flex">
+            <!-- HOME MADE BANANA BREAD -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>HOME MADE BANANA BREAD</h3>
+                <hr />
+                <section>R35.00</section>
+                <article>With Butter</article>
+              </div>
+            </div>
+            <!-- HAM EGGS BENEDICTL -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>HAM EGGS BENEDICT</h3>
+                <hr />
+                <section>R89.00</section>
+                <article>
+                  Poached Eggs • Bolognese Sauce • Toasted Bruchetta
+                </article>
+              </div>
+            </div>
+            <!-- BACON EGGS BENEDICT -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BACON EGGS BENEDICT</h3>
+                <hr />
+                <section>R99.00</section>
+                <article>
+                  Chicken • Cos Lettuce • Tomato • Croutons • Caesar Dressing
+                </article>
+              </div>
+            </div>
+            <!-- SALMON EGGS BENEDICT -->
+            <div class="box Breakfast">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SALMON EGGS BENEDICT</h3>
+                <hr />
+                <section>R126.00</section>
+                <article>One Egg &amp; Bacon on Toast</article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Love and Pasta ---------------------------------------------------------------->
+        <div class="loveAndPasta-container">
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Toasties</h1>
+          </div>
+          <div class="box_flex">
+            <!-- Cheese & Tomato  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Cheese &amp; Tomato</h3>
+                <hr />
+                <section>R45.00</section>
+              </div>
+            </div>
+            <!-- Ham & Cheese -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Ham &amp; Cheese</h3>
+                <hr />
+                <section>R48.00</section>
+              </div>
+            </div>
+            <!-- Bacon & Egg -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Bacon &amp; Egg</h3>
+                <hr />
+                <section>R50 .00</section>
+                <article>
+                  Baked Beans • Spinach • Rocket • Tomato • Onion • Potato Roast
+                </article>
+              </div>
+            </div>
+            <!-- Chicken Mayo -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Chicken Mayo</h3>
+                <hr />
+                <section>R52.00</section>
+              </div>
+            </div>
+            <!-- Tuna Mayo -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Tuna Mayo</h3>
+                <hr />
+                <section>R52.00</section>
+              </div>
+            </div>
+            <!-- Emmental & Gherkin -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Emmental &amp; Gherkin</h3>
+                <hr />
+                <section>R48.00</section>
+              </div>
+            </div>
+          </div>
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Salads</h1>
+          </div>
+          <div class="box_flex">
+            <!-- CAPRESEL -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CAPRESE</h3>
+                <hr />
+                <section>R85.00</section>
+                <article>
+                  Fior di latte Mozzarella • Tomato • Avo • Pesto
+                </article>
+              </div>
+            </div>
+            <!-- GREEK  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>GREEK</h3>
+                <hr />
+                <section>R78.00</section>
+                <article>
+                  Tomato • Cucumber • Olives • Onion • Feta (no Lettuce)
+                </article>
+              </div>
+            </div>
+            <!-- CHICKEN CAESAR -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CHICKEN CAESAR</h3>
+                <hr />
+                <section>R90.00</section>
+                <article>
+                  Chicken • Cos Lettuce • Tomato • Croutons • Caesar Dressing
+                </article>
+              </div>
+            </div>
+            <!-- SALMON 40g -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SALMON 40g</h3>
+                <hr />
+                <section>R130.00</section>
+                <article>
+                  Salmon • Greens • Rocket • Olives • Cucumber • Caper Berries
+                  Artichoke
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Rossella's Piadine</h1>
+          </div>
+          <div class="box_flex">
+            <!-- PIADINA CAPRESE -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PIADINA CAPRESE</h3>
+                <hr />
+                <section>R98.00</section>
+                <article>Mozzarella • Basil • Tomato • Pesto • Avo</article>
+              </div>
+            </div>
+            <!-- PIDINA SPINACH  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PIDINA SPINACH</h3>
+                <hr />
+                <section>R95.00</section>
+                <article>Spinach • Mushrooms • Mozzarella</article>
+              </div>
+            </div>
+            <!-- PIADINA HAM -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PIADINA HAM</h3>
+                <hr />
+                <section>R99.00</section>
+                <article>Gypsy Ham • Mozzarella • Tomato</article>
+              </div>
+            </div>
+            <!-- PIADINA PROSCITTO -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PIADINA PROSCITTO</h3>
+                <hr />
+                <section>R115.00</section>
+                <article>Proscultto • Mozzarella</article>
+              </div>
+            </div>
+            <!-- POPOLO -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>POPOLO</h3>
+                <hr />
+                <section>R91.00</section>
+                <article>
+                  Two Eggs • Bacon • Pork or Beef Sausage Tomato • Toast
+                </article>
+              </div>
+            </div>
+            <!-- PIADINA INVOLTINO -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PIADINA INVOLTINO</h3>
+                <hr />
+                <section>R118.00</section>
+                <article>
+                  Chicken Schintzel • Avo • Rocket • Mozzarello • Sweet chilli
+                </article>
+              </div>
+            </div>
+            <!-- PIADINA SALAME -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PIADINA SALAME</h3>
+                <hr />
+                <section>R115.00</section>
+                <article>Salame • Emmental Cheese • Gherkin</article>
+              </div>
+            </div>
+          </div>
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Mains</h1>
+          </div>
+          <div class="box_flex">
+            <!-- PARIMIGIANA DI MELANZANE... -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Homemade-Baked-Croissants.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>PARIMIGIANA DI MELANZANE</h3>
+                <hr />
+                <section>R110.00</section>
+              </div>
+            </div>
+            <!-- RISOTTO - Zafferano -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>RISOTTO - Zafferano</h3>
+                <hr />
+                <section>R135.00</section>
+              </div>
+            </div>
+            <!-- Porcini Mushroom -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/BAKED-MUFFINS.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Porcini Mushroom</h3>
+                <hr />
+                <section>R135.00</section>
+              </div>
+            </div>
+          </div>
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Burgers</h1>
+          </div>
+          <div class="box_flex">
+            <!-- THE CLASSIC... -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Homemade-Baked-Croissants.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>THE CLASSIC</h3>
+                <hr />
+                <section>R102.00</section>
+              </div>
+            </div>
+            <!-- BACON & AVO BURGER -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BACON &amp; AVO BURGER</h3>
+                <hr />
+                <section>R135.00</section>
+              </div>
+            </div>
+            <!-- CHICKEN SCHNITZEL BURGER -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/BAKED-MUFFINS.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CHICKEN SCHNITZEL BURGER</h3>
+                <hr />
+                <section>R120.00</section>
+              </div>
+            </div>
+            <!-- BEETROOT & BAOBAB BURGER -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/BAKED-MUFFINS.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BEETROOT &amp; BAOBAB BURGER</h3>
+                <hr />
+                <section>R110.00</section>
+              </div>
+            </div>
+            <!-- GOURMET JALAPENOBURGER -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/BAKED-MUFFINS.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>GOURMET JALAPENOBURGER</h3>
+                <hr />
+                <section>R150.00</section>
+                <article>Bacon • Egg • Cheddar • Jalapeno</article>
+              </div>
+            </div>
+          </div>
+
+          <!-- Light Dishes -->
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Light Dishes</h1>
+          </div>
+          <div class="box_flex">
+            <!-- GRILLED CHICKEN BREAST OR SCHNITZEL with sauteed Veg or Salad or Chips... -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Homemade-Baked-Croissants.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>
+                  GRILLED CHICKEN BREAST OR SCHNITZEL with sauteed Veg or Salad
+                  or Chips
+                </h3>
+                <hr />
+                <section>R125.00</section>
+              </div>
+            </div>
+
+            <!-- BANGERS & MASH -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BANGERS &amp; MASH</h3>
+                <hr />
+                <section>R120.00</section>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pasta -->
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Pasta</h1>
+          </div>
+          <div class="box_flex">
+            <!-- NAPOLETANA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>NAPOLETANA</h3>
+                <hr />
+                <section>R90.00</section>
+
+                <article>Tomato based sauce • Onion • Basil</article>
+              </div>
+            </div>
+
+            <!-- BOLOGNESE  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BOLOGNESE</h3>
+                <hr />
+                <section>R112.00</section>
+
+                <article>
+                  Tomato based sauce • Beef Mince • Carrot Celery • Onion •
+                  Basil
+                </article>
+              </div>
+            </div>
+
+            <!-- CAMPAGNOLA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CAMPAGNOLA</h3>
+                <hr />
+                <section>R117.00</section>
+
+                <article>Cream based Sauze • Ham • Musroom • Zucchini</article>
+              </div>
+            </div>
+
+            <!--AMATRICIANA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>AMATRICIANA</h3>
+                <hr />
+                <section>R120.00</section>
+
+                <article>
+                  omato based sauce • Bacon • White Wine • Onion • Black Pepper
+                </article>
+              </div>
+            </div>
+
+            <!-- OUR HOMEMADE BEEF LASAGNA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>OUR HOMEMADE BEEF LASAGNA</h3>
+                <hr />
+                <section>R130.00</section>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ravioli -->
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Ravioli</h1>
+          </div>
+          <div class="box_flex">
+            <!-- SPINACH & RICOTTA CHEESE ... -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Homemade-Baked-Croissants.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SPINACH &amp; RICOTTA CHEESE</h3>
+                <hr />
+                <section>R130.00</section>
+              </div>
+            </div>
+
+            <!--BEETROOT & ARTICHOKE  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BEETROOT &amp; ARTICHOKE</h3>
+                <hr />
+                <section>R130.00</section>
+              </div>
+            </div>
+
+            <!-- THAI CHICKEN... -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Homemade-Baked-Croissants.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>THAI CHICKEN</h3>
+                <hr />
+                <section>R130.00</section>
+              </div>
+            </div>
+
+            <!-- BEEF -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BEEF</h3>
+                <hr />
+                <section>R130.00</section>
+              </div>
+            </div>
+
+            <!-- SALMON - with a Rose Sauce -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Almond-Croissant.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SALMON - with a Rose Sauce</h3>
+                <hr />
+                <section>R135.00</section>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pizza -->
+          <div class="box LoveAndPasta" style="width: 100%">
+            <h1>Pizza</h1>
+          </div>
+          <div class="box_flex">
+            <!-- MARGHERITA  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Bacon-eggroll.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>MARGHERITA</h3>
+                <hr />
+                <section>R75.00</section>
+
+                <article>Tomato • Mozzarella • Basil</article>
+              </div>
+            </div>
+
+            <!-- CAPRESE   -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/Eggs-purgotroy.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CAPRESE</h3>
+                <hr />
+                <section>R102.00</section>
+
+                <article>Tomato • Mozzarella • Pesto • Basil</article>
+              </div>
+            </div>
+
+            <!-- REGINA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/ChickenCaesar.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>REGINA</h3>
+                <hr />
+                <section>R102.00</section>
+
+                <article>Tomato • Mozzarella • Ham • Mushroom</article>
+              </div>
+            </div>
+
+            <!--VEGATARIANA  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>VEGATARIANA</h3>
+                <hr />
+                <section>R110.00</section>
+
+                <article>Tomato • Mozzarella • Grilled Veg</article>
+              </div>
+            </div>
+
+            <!-- VEGANO -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>VEGANO</h3>
+                <hr />
+                <section>R95.00</section>
+                <article>Tomato • Grilled Veg • Rocket</article>
+              </div>
+            </div>
+
+            <!--BACON and BANANA  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BACON &amp; BANANA</h3>
+                <hr />
+                <section>R118.00</section>
+
+                <article>Tomato • Mozzarella • Bacon • Banana</article>
+              </div>
+            </div>
+
+            <!-- SPICY CHICKEN -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SPICY CHICKEN</h3>
+                <hr />
+                <section>R130.00</section>
+                <article>
+                  Tomato • Mozzarella • Grilled Chicken • Peppers • Onion
+                </article>
+              </div>
+            </div>
+
+            <!--HAWAIIAN  -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/PINCIO.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>HAWAIIAN</h3>
+                <hr />
+                <section>R115.00</section>
+
+                <article>Tomato • Mozzarella • Ham • Pineapple</article>
+              </div>
+            </div>
+
+            <!-- SALAME & PEPPADEW -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>SALAME &AMP; PEPPADEW</h3>
+                <hr />
+                <section>R120.00</section>
+                <article>Tomato • Mozzarella • Peppadew</article>
+              </div>
+            </div>
+
+            <!-- DIAVOLA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>DIAVOLA</h3>
+                <hr />
+                <section>R125.00</section>
+                <article>
+                  Tomato • Mozzarella • Salame • Jalapeno • Chilli
+                </article>
+              </div>
+            </div>
+
+            <!-- MARINARA -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>MARINARA</h3>
+                <hr />
+                <section>R130.00</section>
+                <article>
+                  Mozzarella • Tomato • Anchovies • Caper Berries • Black olives
+                </article>
+              </div>
+            </div>
+
+            <!-- 4 STAGIONI -->
+            <div class="box LoveAndPasta">
+              <div class="box_img">
+                <img src="images/popolo.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>4 STAGIONI</h3>
+                <hr />
+                <section>R130.00</section>
+                <article>
+                  Tomato • Mozzarella • Ham • Mushroom • Black olives •
+                  Artichokes
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drinks ------------------------------------------------------------------------>
+        <div class="drink-list-container">
+          <!-- sparkling wine -->
+          <div class="box Drinks blacked-h1-container" style="width: 100%">
+            <h1>Sparkling Wine</h1>
+          </div>
+          <div class="box_flex drinks">
+            <!-- Pongracz ... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/rose-wine.png" alt="" />
+              </div>
+              <div class="text">
+                <h3>Pongracz Brut or Rose</h3>
+                <hr />
+                <section>R350.00</section>
+              </div>
+            </div>
+            <!--Nalu Prosecco  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-prosecco.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Nalu Prosecco</h3>
+                <hr />
+                <section>R260.00</section>
+              </div>
+            </div>
+            <!-- Prosecco... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/prosecco.webp" alt="" />
+              </div>
+              <div class="text">
+                <h3>Prosecco</h3>
+                <hr />
+                <section>R280.00</section>
+              </div>
+            </div>
+          </div>
+
+          <!-- White wine -->
+          <div class="box Drinks blacked-h1-container" style="width: 100%">
+            <h1 style="text-decoration: underline white">White Wine</h1>
+          </div>
+          <div class="box_flex drinks blacked-box-container">
+            <!-- Nalu Sauvignon Blanc ... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-blanc.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Nalu Sauvignon Blanc</h3>
+                <hr />
+                <section>R120.00</section>
+                <article class="drink-article">R35 A GLASS</article>
+              </div>
+            </div>
+            <!--Anura Sauvignon Blanc  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/anura-blanc.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Anura Sauvignon Blanc</h3>
+                <hr />
+                <section>R160.00</section>
+                <article class="drink-article">R45 A GLASS</article>
+              </div>
+            </div>
+
+            <!-- Le Mond Sauvignon Blanc... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/le-mond-blanc.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Le Mond Sauvignon Blanc</h3>
+                <hr />
+                <section>R280.00</section>
+                <article class="drink-article">R45 A GLASS</article>
+              </div>
+            </div>
+            <!-- Ayama Chenin Blanc ... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/ayama-chenin-blanc.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Ayama Chenin Blanc</h3>
+                <hr />
+                <section>R160.00</section>
+                <article class="drink-article">R45 A GLASS</article>
+              </div>
+            </div>
+            <!-- Ayama Vermentino  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/ayama-vermen.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Ayama Vermentino</h3>
+                <hr />
+                <section>R150.00</section>
+                <article class="drink-article">R48 A GLASS</article>
+              </div>
+            </div>
+            <!-- The Wolf Trap... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/wolftrap.webp" alt="" />
+              </div>
+              <div class="text">
+                <h3>The Wolf Trap</h3>
+                <hr />
+                <section>R180.00</section>
+                <article class="drink-article">R48 A GLASS</article>
+              </div>
+            </div>
+            <!-- Durbanville Hills Chardonnay... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/durbanville-chardonnay.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Durbanville Hills Chardonnay</h3>
+                <hr />
+                <section>R180.00</section>
+                <article class="drink-article">R48 A GLASS</article>
+              </div>
+            </div>
+          </div>
+
+          <!-- rose wine -->
+          <div class="box Drinks blacked-h1-container" style="width: 100%">
+            <h1 style="text-decoration: underline rosybrown">Rose Wine</h1>
+          </div>
+          <div class="box_flex drinks">
+            <!-- Le Mond Rose ... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/rose-wine.png" alt="" />
+              </div>
+              <div class="text">
+                <h3>Le Mond Rose</h3>
+                <hr />
+                <section>R160.00</section>
+                <article class="drink-article">R45 A GLASS</article>
+              </div>
+            </div>
+
+            <!-- Nederberg Rose  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-prosecco.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Nederberg Rose</h3>
+                <hr />
+                <section>R130.00</section>
+                <article class="drink-article">R35 A GLASS</article>
+              </div>
+            </div>
+          </div>
+
+          <!-- Red Wine -->
+          <div class="box Drinks blacked-h1-container" style="width: 100%">
+            <h1 style="text-decoration: underline rgb(182, 0, 0); color: white">
+              Red Wine
+            </h1>
+          </div>
+          <div class="box_flex drinks">
+            <!-- Le Mond Rose ... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/rose-wine.png" alt="" />
+              </div>
+              <div class="text">
+                <h3>Le Mond Rose</h3>
+                <hr />
+                <section>R160.00</section>
+                <article class="drink-article">R45 A GLASS</article>
+              </div>
+            </div>
+            <!-- Nederberg Rose  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-prosecco.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Nederberg Rose</h3>
+                <hr />
+                <section>R130.00</section>
+                <article class="drink-article">R35 A GLASS</article>
+              </div>
+            </div>
+          </div>
+
+        
+          
+          
+        </div>
+
+        
+
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+      <div class="t-cs">
+        <div class="sigebrand">
+          Powered by<a href="#">Sige Collection</a>| © Dario's Cafe' 2023
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu.js"></script>
   </body>
 </html>

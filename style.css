@@ -4,12 +4,35 @@
   font-family: "Hammersmith One", sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .box2-section2 {
   display: none;
 }
 
+.box2-section {
+  display: block;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
 img {
   pointer-events: none;
+  filter: brightness(80%) contrast(120%);
 }
 
 body {
@@ -569,6 +592,7 @@ footer {
     min-height: 20px;
   }
 
+
   .box2--card1 h1 {
     width: 200px;
     font-size: 32px;
@@ -628,6 +652,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(12, 12, 12);
+
   }
 
   .contact-info-title {

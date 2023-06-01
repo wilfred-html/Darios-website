@@ -1,36 +1,37 @@
-const breakFast = document.querySelector(".breakfast-container");
-const main = document.querySelector(".main-container");
-const beverage = document.querySelector(".beverage-container");
-const drinks = document.querySelector(".drink-container");
-const desert = document.querySelector(".desert-container");
+document.addEventListener("DOMContentLoaded", function () {
+  let fadeElements = document.querySelectorAll(".fade-in");
+  let fadeTimeout;
 
-// container triggers
-const breakFastBtn = document.querySelector(".breakfast-btn");
-const mainBtn = document.querySelector(".main-btn");
-const beverageBtn = document.querySelector(".beverage-btn");
-const drinkBtn = document.querySelector(".drink-btn");
-const desertBtn = document.querySelector(".desert-btn");
+  function checkFadeElements() {
+    for (let i = 0; i < fadeElements.length; i++) {
+      let fadeElement = fadeElements[i];
+      let positionFromTop = fadeElement.getBoundingClientRect().top;
 
-// Default Visibility
-breakFast.style.display = "none";
-main.style.display = "block";
-breakFastBtn.style.backgroundColor = "#3e6448";
+      if (positionFromTop - window.innerHeight <= 0) {
+        fadeElement.classList.add("show");
+      } else {
+        fadeElement.classList.remove("show");
+      }
+    }
+  }
 
-// Set starting colors
-mainBtn.style.backgroundColor = "#53835f";
+  function scrollHandler() {
+    clearTimeout(fadeTimeout);
+    fadeTimeout = setTimeout(checkFadeElements, 5);
+  } 
 
-mainBtn.addEventListener("click", function () {
-  breakFast.style.display = "none";
-  main.style.display = "block";
-
-  mainBtn.style.backgroundColor = "#3e6448";
-  breakFastBtn.style.backgroundColor = "#53835f";
+  window.addEventListener("scroll", scrollHandler);
+  checkFadeElements();
 });
 
-breakFastBtn.addEventListener("click", function () {
-  breakFast.style.display = "block";
-  main.style.display = "none";
 
-  breakFastBtn.style.backgroundColor = "#3e6448";
-  mainBtn.style.backgroundColor = "#53835f";
-});
+(function (w,d,s,o,r,js,fjs) {
+  w[r]=w[r]||function() {(w[r].q = w[r].q || []).push(arguments)}
+  w[r]('app', '-vx658iRXl');
+  if(d.getElementById(o)) return;
+  js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+  js.id = o; js.src = 'https://embed.trustmary.com/embed.js';
+  js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+}(window, document, 'script', 'trustmary-embed', 'tmary'));
+
+
