@@ -13,6 +13,7 @@
   }
 }
 
+
 .box2-section2 {
   display: none;
 }
@@ -65,6 +66,12 @@ header {
   justify-content: center;
 }
 
+.mydiv a{
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .mytitle {
   padding-top: 30px;
   font-size: 20px;
@@ -78,7 +85,7 @@ header {
   padding: 20px 0;
 }
 
-.mybtn {
+.mybtn, .mybtn2 {
   text-decoration: none;
   color: black;
   background-color: white;
@@ -86,10 +93,24 @@ header {
   align-items: center;
   justify-content: center;
   height: 40px;
-  padding: 00px 12px;
+  padding: 0px 12px;
   border-radius: 3px;
   transition: background-color 150ms, color 150ms, border 150ms;
   font-family: "Hanken Grotesk", sans-serif;
+}
+
+.mybtn2 {
+  height: 36px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0 18px;
+}
+
+.mybtn2:active {
+  background-color: white;
+  color: black;
+  border: 1px solid  ;
 }
 
 .mybtn:active {
@@ -343,6 +364,19 @@ footer {
   padding: 0 5px;
 }
 
+.snapwidget-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5f5ef;
+  padding: 20px;
+}
+
+.snapwidget-widget {
+  font-size: 0.8rem;
+}
+
+
 /* Tablets/Ipads */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
@@ -357,6 +391,13 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .mydiv a{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
 
   .image-cards {
     display: grid;
@@ -508,6 +549,13 @@ footer {
     justify-content: space-around;
   }
 
+  .mydiv a{
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+
   .mytitle {
     padding-top: 60px;
     font-size: 20px;
@@ -592,7 +640,6 @@ footer {
     min-height: 20px;
   }
 
-
   .box2--card1 h1 {
     width: 200px;
     font-size: 32px;
@@ -652,7 +699,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(12, 12, 12);
-
   }
 
   .contact-info-title {

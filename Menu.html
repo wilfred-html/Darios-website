@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Restaurant</title>
+    <title>Dario's Cafe</title>
     <link rel="stylesheet" href="menu-style.css" />
+    <link rel="icon" href="images/Darios-cafe-logo.svg">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -20,19 +22,30 @@
     />
   </head>
   <body class="body1">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      fill="currentColor"
-      class="burger-menu bi bi-list"
-      viewBox="0 0 16 16"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-      />
-    </svg>
+
+    <div class="burger-menu-container">
+
+      <div class="burger-title">
+        <h2>Dario's Menu</h2>
+      </div>
+        
+      <div class="wrap-container">
+        <p>menu</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="burger-menu bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+    </div>
 
     <div class="container">
       <div class="title">
@@ -47,7 +60,17 @@
 
       <div class="content">
         <div class="menu-default list disapear">
-          <a href="index.html">Home</a>
+          <div class="my-hover-container">
+            <a class="hover-menu"><p>more</p> </a>
+            
+            <div class="my-nav-hovers">
+              <a href="index.html">Home</a>
+                <a href="menu.html">Food menu</a>
+                <a href="building.html">Gallery</a>
+                <a href="index.html#maps">Contact us</a>
+            </div>
+          </div>
+
           <li data-color=".Breakfast">Breakfast</li>
           <li data-color=".LoveAndPasta">Love &amp; Pasta</li>
           <li data-color=".Drinks">Drinks</li>
@@ -57,7 +80,15 @@
 
         <div class="menu-container">
           <div class="list menu-navigation">
-            <div class="li-a"><a href="index.html">Home</a></div>
+            <div class="li-a">
+
+              <a href="index.html">Home</a>
+              <a href="menu.html">Food menu</a>
+              <a href="building.html">Gallery</a>
+              <a href="index.html#maps">Contact us</a>
+            </div>
+
+           
             <li data-color=".Breakfast">Breakfast</li>
             <li data-color=".LoveAndPasta">Love &amp; Pasta</li>
             <li data-color=".Drinks">Drinks</li>
@@ -1093,11 +1124,14 @@
 
         <!-- Drinks ------------------------------------------------------------------------>
         <div class="drink-list-container">
+
           <!-- sparkling wine -->
           <div class="box Drinks blacked-h1-container" style="width: 100%">
             <h1>Sparkling Wine</h1>
           </div>
+
           <div class="box_flex drinks">
+
             <!-- Pongracz ... -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
@@ -1109,6 +1143,7 @@
                 <section>R350.00</section>
               </div>
             </div>
+
             <!--Nalu Prosecco  -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
@@ -1120,6 +1155,7 @@
                 <section>R260.00</section>
               </div>
             </div>
+
             <!-- Prosecco... -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
@@ -1137,6 +1173,7 @@
           <div class="box Drinks blacked-h1-container" style="width: 100%">
             <h1 style="text-decoration: underline white">White Wine</h1>
           </div>
+
           <div class="box_flex drinks blacked-box-container">
             <!-- Nalu Sauvignon Blanc ... -->
             <div class="box Drinks blacked-box">
@@ -1264,35 +1301,191 @@
             </h1>
           </div>
           <div class="box_flex drinks">
-            <!-- Le Mond Rose ... -->
+
+            <!-- Nalu Merlot... -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
                 <img src="images/rose-wine.png" alt="" />
               </div>
               <div class="text">
-                <h3>Le Mond Rose</h3>
+                <h3>Nalu Merlot</h3>
                 <hr />
-                <section>R160.00</section>
-                <article class="drink-article">R45 A GLASS</article>
+                <section>R120.00</section>
+                <article class="drink-article">R35 A GLASS</article>
               </div>
             </div>
-            <!-- Nederberg Rose  -->
+
+            <!-- Groote Post Old Mans's Blend  -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
                 <img src="images/nalu-prosecco.jpg" alt="" />
               </div>
               <div class="text">
-                <h3>Nederberg Rose</h3>
+                <h3>Groote Post Old Mans's Blend</h3>
                 <hr />
-                <section>R130.00</section>
-                <article class="drink-article">R35 A GLASS</article>
+                <section>R180.00</section>
+                <article class="drink-article">R48 A GLASS</article>
               </div>
             </div>
+
+             <!-- The Wolf Trap  -->
+             <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-prosecco.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>The Wolf Trap</h3>
+                <hr />
+                <section>R150.00</section>
+                <article class="drink-article">R41 A GLASS</article>
+              </div>
+            </div>
+
+             <!-- Raka Spliced  -->
+             <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-prosecco.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Raka Spliced</h3>
+                <hr />
+                <section>R150.00</section>
+                <article class="drink-article">R41 A GLASS</article>
+              </div>
+            </div>
+
+            <!-- Ayama Pinotage  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/nalu-prosecco.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Ayama Pinotage</h3>
+                <hr />
+                <section>R150.00</section>
+                <article class="drink-article">R41 A GLASS</article>
+              </div>
+            </div>
+
           </div>
 
-        
-          
-          
+           <!-- Beers -->
+           <div class="box Drinks blacked-h1-container" style="width: 100%">
+            <h1 style="text-decoration: underline rgb(182, 109, 0); color: white">
+              Beers
+            </h1>
+          </div>
+          <div class="box_flex drinks">
+
+            <!-- Castle Lite... -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/castle-lite1.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Castle Lite</h3>
+                <hr />
+                <section>R30.00</section>
+              </div>
+            </div>
+
+            <!-- Amstel Lager / Windhoek Lager  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/Drinks-Amstel.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Amstel Lager / Windhoek Lager</h3>
+                <hr />
+                <section>R36.00</section>
+              </div>
+            </div>
+
+             <!-- Black Label   -->
+             <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/black-label.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Black Label / Castle Milk Stout</h3>
+                <hr />
+                <section>R32.00</section>
+              </div>
+            </div>
+
+             <!-- Heineken  -->
+             <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/Heineken-scaled.webp" alt="" />
+              </div>
+              <div class="text">
+                <h3>Heineken</h3>
+                <hr />
+                <section>R40.00</section>
+              </div>
+            </div>
+
+            <!-- Heineken 0% Alcohol  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/Non-Alcoholic-Beers.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Heineken 0% Alcohol</h3>
+                <hr />
+                <section>R35.00</section>
+              </div>
+            </div>
+
+            <!-- Windhoek Drought  -->
+            <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/windhoek.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Windhoek Drought</h3>
+                <hr />
+                <section>R45.00</section>
+              </div>
+            </div>
+
+             <!-- Judas Peak  -->
+             <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/Judas-Peak.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Judas Peak</h3>
+                <hr />
+                <section>R40.00</section>
+              </div>
+            </div>
+
+             <!-- Peroni  -->
+             <div class="box Drinks blacked-box">
+              <div class="box_img">
+                <img src="images/peroni-nastro-azzurro.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Peroni</h3>
+                <hr />
+                <section>R40.00</section>
+              </div>
+            </div>
+
+              <!-- Corona  -->
+              <div class="box Drinks blacked-box">
+                <div class="box_img">
+                  <img src="images/corona-drink.jpg" alt="" />
+                </div>
+                <div class="text">
+                  <h3>Corona</h3>
+                  <hr />
+                  <section>R44.00</section>
+                </div>
+              </div>
+
+          </div>
         </div>
 
         
