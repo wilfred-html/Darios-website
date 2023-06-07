@@ -11,6 +11,7 @@ let menuContainer = document.querySelector(".menu-container");
 let menuNav = document.querySelector(".menu-container .menu-navigation");
 const description = document.querySelector(".description");
 let drinks = document.querySelector(".Drinks");
+let drinkContainer = document.querySelector(".Drinks");
 let body1 = document.querySelector("body");
 let container = document.querySelector(".container");
 let title = document.querySelector(".title");
@@ -41,6 +42,15 @@ list.forEach((el) => {
     document.querySelectorAll(e.target.dataset.color).forEach((el3) => {
       el3.style.display = "flex";
     });
+
+    // Hide the menuContainer when a list button is clicked
+
+    if (window.matchMedia("(max-width: 670px)").matches) {
+    menuContainer.style.display = "none";
+    menuNav.style.display = "none";
+    container.style.paddingTop = "80px";
+    description.style.display = "block";
+    } 
   });
 });
 
@@ -72,4 +82,5 @@ window.addEventListener("resize", handleResize);
 
 burgerMenu[0].addEventListener("click", toggleMenu);
 burgerMenu[1].addEventListener("click", toggleMenu);
+
 
