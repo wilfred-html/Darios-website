@@ -13,10 +13,10 @@ const description = document.querySelector(".description");
 let drinks = document.querySelector(".Drinks");
 let body1 = document.querySelector("body");
 let container = document.querySelector(".container");
+let title = document.querySelector(".title");
 
-const hoverContainer = document.querySelector('.my-hover-container');
-const navHovers = document.querySelector('.my-nav-hovers');
-
+const hoverContainer = document.querySelector(".my-hover-container");
+const navHovers = document.querySelector(".my-nav-hovers");
 
 list.forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -45,18 +45,16 @@ list.forEach((el) => {
 });
 
 function toggleMenu() {
-  if (
-    menuContainer.style.display === "block" 
-  ) {
+  if (menuContainer.style.display === "block") {
     menuContainer.style.display = "none";
     menuNav.style.display = "none";
-    container.style.paddingTop = "0px";
+    container.style.paddingTop = "80px";
     description.style.display = "block";
   } else {
     menuContainer.style.display = "block";
     menuNav.style.display = "block";
     description.style.display = "none";
-    container.style.paddingTop = "50%";
+    container.style.paddingTop = "100%";
   }
 }
 
@@ -67,9 +65,6 @@ function handleResize() {
     menuNav.style.display = "none";
     container.style.paddingTop = "0px";
     description.style.display = "block";
-  } else {
-    // Restore the menu visibility if screen width is less than 740px
-    toggleMenu();
   }
 }
 
@@ -78,20 +73,3 @@ window.addEventListener("resize", handleResize);
 burgerMenu[0].addEventListener("click", toggleMenu);
 burgerMenu[1].addEventListener("click", toggleMenu);
 
-
-
-let timeoutId;
-
-hoverContainer.addEventListener('mouseenter', function() {
-  clearTimeout(timeoutId);
-  navHovers.style.display = 'flex';
-  navHovers.style.opacity = '1';
-  navHovers.style.visibility = 'visible';
-});
-
-hoverContainer.addEventListener('mouseleave', function() {
-  timeoutId = setTimeout(function() {
-    navHovers.style.opacity = '0';
-    navHovers.style.visibility = 'hidden';
-  }, 500); // Adjust the delay as needed
-});

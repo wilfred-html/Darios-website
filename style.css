@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: "Hammersmith One", sans-serif;
+  -webkit-tap-highlight-color: transparent; /* For iOS devices */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android devices */
 }
 
 @keyframes fadeIn {
@@ -12,7 +14,6 @@
     opacity: 1;
   }
 }
-
 
 .box2-section2 {
   display: none;
@@ -66,7 +67,7 @@ header {
   justify-content: center;
 }
 
-.mydiv a{
+.mydiv a {
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -85,7 +86,8 @@ header {
   padding: 20px 0;
 }
 
-.mybtn, .mybtn2 {
+.mybtn,
+.mybtn2 {
   text-decoration: none;
   color: black;
   background-color: white;
@@ -110,7 +112,7 @@ header {
 .mybtn2:active {
   background-color: white;
   color: black;
-  border: 1px solid  ;
+  border: 1px solid;
 }
 
 .mybtn:active {
@@ -376,7 +378,6 @@ footer {
   font-size: 0.8rem;
 }
 
-
 /* Tablets/Ipads */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
@@ -392,12 +393,11 @@ footer {
     background-repeat: no-repeat;
   }
 
-  .mydiv a{
+  .mydiv a {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 0;
   }
-  
 
   .image-cards {
     display: grid;
@@ -549,12 +549,11 @@ footer {
     justify-content: space-around;
   }
 
-  .mydiv a{
+  .mydiv a {
     margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  
 
   .mytitle {
     padding-top: 60px;
