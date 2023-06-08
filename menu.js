@@ -16,8 +16,8 @@ let body1 = document.querySelector("body");
 let container = document.querySelector(".container");
 let title = document.querySelector(".title");
 
-const hoverContainer = document.querySelector(".my-hover-container");
-const navHovers = document.querySelector(".my-nav-hovers");
+let moreBtn = document.querySelector(".hover-menu");
+let showOptions = document.querySelector(".my-nav-hovers");
 
 list.forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -46,11 +46,11 @@ list.forEach((el) => {
     // Hide the menuContainer when a list button is clicked
 
     if (window.matchMedia("(max-width: 670px)").matches) {
-    menuContainer.style.display = "none";
-    menuNav.style.display = "none";
-    container.style.paddingTop = "80px";
-    description.style.display = "block";
-    } 
+      menuContainer.style.display = "none";
+      menuNav.style.display = "none";
+      container.style.paddingTop = "80px";
+      description.style.display = "block";
+    }
   });
 });
 
@@ -82,5 +82,27 @@ window.addEventListener("resize", handleResize);
 
 burgerMenu[0].addEventListener("click", toggleMenu);
 burgerMenu[1].addEventListener("click", toggleMenu);
+
+function toggleDeskMenu() {
+  let showOptions = document.querySelector(".my-nav-hovers");
+  if (showOptions.classList.contains("hide")) {
+    showOptions.classList.remove("hide");
+    showOptions.classList.add("show");
+  } else if (showOptions.classList.contains("show")) {
+    showOptions.classList.remove("show");
+    showOptions.classList.add("hide");
+  }
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+    showOptions.classList.remove("show");
+    showOptions.classList.add("hide");
+    }
+  });
+}
+
+moreBtn.addEventListener("click", toggleDeskMenu);
+document.body.addEventListener("scroll", toggleDeskMenu);
+
 
 

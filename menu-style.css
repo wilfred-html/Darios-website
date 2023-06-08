@@ -34,6 +34,31 @@ body {
   background: #fff;
 }
 
+.fixed-spot {
+  position: fixed;
+  top: 10px;
+  min-width: 1200px;
+  background-color: #001a2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.fixed-spot a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 120ms;
+}
+
+.fixed-spot a:active {
+  color: #00d467;
+}
+
 .container {
   max-width: 85%;
   margin: 0 auto;
@@ -96,7 +121,7 @@ body {
   width: 100%;
 }
 
-.content .menu-default li:nth-child(2) {
+.content .menu-default li:nth-child(1) {
   color: #65bff7;
 }
 
@@ -107,6 +132,7 @@ body {
 
 .my-hover-container {
   position: relative;
+  margin-top: 5px;
 }
 
 a::selection {
@@ -123,42 +149,57 @@ a::selection {
   padding: 0px 10px;
   border: none;
   transform: scale(0.8);
-}
-
-.hover-menu p {
-  color: white;
-  font-weight: 400;
-  transform: scale(0.8);
   transition: opacity 110ms;
 }
 
-.hover-menu:hover {
+
+
+.hover-menu svg {
+  color: white;
+  font-weight: 400;
+  transform: scale(1);
+}
+
+.hover-menu:active {
   opacity: 0.7;
 }
 
+.hide {
+  display: none;
+}
+
+.my-nav-hovers.show {
+  display: block;
+}
+
+
 .my-nav-hovers {
   position: absolute;
+  width: 100px;
   padding-top: 5px;
   background-color: rgba(0, 0, 0, 0.848);
-  padding: 5px 15px;
-  z-index: 99;
+  padding: 5px 10px;
   top: 30px;
   left: -10px;
-  right: -550px;
-  display: none;
-  justify-content: space-around;
+  right: 0px;
+  justify-content: center;
   border-radius: 10px;
-  opacity: 0; /* Set initial opacity to 0 */
+  /* Set initial opacity to 0 */
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out 0.3s; /* Add transition properties */
+}
+
+.my-nav-hovers a::selection {
+  color: white;
 }
 
 .my-nav-hovers a {
   color: white;
   display: flex;
-  margin: 0;
+  margin: 2px 0;
   margin-right: 10px;
   font-weight: 400;
   font-size: 0.8rem;
+  pointer-events:fill;
 }
 
 .burger-menu-container {
@@ -177,19 +218,15 @@ h1 {
 }
 
 .omelette-list {
-  background-color: white;
-  color: black;
-  width: 600px;
-  padding: 20px;
+  width: 500px;
+  font-style: italic;
   margin: 0 auto;
   border-radius: 20px;
 }
 
 .omelette-list li {
   margin-bottom: 10px;
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-  /* letter-spacing: 4px; */
+  font-size: 1rem;
 }
 
 .upscale {
@@ -201,6 +238,11 @@ h1 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.box_flex-middle {
+  justify-content: center;
+  column-gap: 22px;
 }
 
 .box {
@@ -236,7 +278,6 @@ h1 {
 }
 
 .box .box_img {
-  /* width: 35%; */
   height: 130px;
   width: 130px;
   text-align: center;
@@ -255,6 +296,16 @@ h1 {
   height: 130px;
   padding-left: 10px;
 }
+
+
+
+
+.light-dishes-extend {
+  width: 45%;
+  justify-content: start;
+}
+
+
 
 .text h3 {
   text-transform: capitalize;
@@ -296,10 +347,8 @@ h1 {
 }
 
 .length {
-  background-color: #65bff7;
   height: 400px;
 }
-
 
 .t-cs {
   height: 35px;
@@ -318,26 +367,20 @@ h1 {
   padding: 0 5px;
 }
 
-.stripe1 {
-  border-right: 12px solid #c82a35;
-}
-
-.stripe2 {
-  border-right: 12px solid #f7f7f7;
-  margin-right: 10px;
-}
-
-.stripe3 {
-  border-right: 12px solid #008d44;
-  margin-right: 10px;
-}
-
 .box {
   display: none;
 }
 
 .Breakfast {
   display: flex;
+}
+
+.omelete-breakfast {
+  display: flex;
+  flex-direction: column;
+  background-color: #50431e;
+  color: white;
+  margin: 20px 20px 0px 0;
 }
 
 .drink-list-container,
@@ -351,6 +394,16 @@ h1 {
   background-color: #025385;
   min-height: 210px;
   align-items: center;
+}
+
+.softdrink-list-container .box {
+  background-color: burlywood;
+  color: white;
+}
+
+.softdrink-list-container section {
+  font-weight: 500;
+  font-style: italic;
 }
 
 @keyframes movement {
@@ -382,12 +435,17 @@ h1 {
     width: 80%;
   }
 
+  .box_flex-middle {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
   .box .box_img {
     text-align: left;
   }
   .box_img img {
-    width: 170px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
   }
   .box {
     width: 100%;
@@ -583,8 +641,6 @@ h1 {
   .menu-navigation .li-a a:active {
     background-color: rgba(236, 236, 236, 0.753);
   }
-
-
 
   .drink-list-container {
     background-color: rgb(31, 31, 31);
