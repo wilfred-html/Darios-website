@@ -65,21 +65,19 @@
           <li data-color=".Dolci">Dolci</li>
 
           <div class="my-hover-container">
-            <a class="hover-menu"
+            <a class="hover-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots"
+                viewBox="0 0 16 16"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-three-dots"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-                  />
-                </svg>
-              
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                />
+              </svg>
             </a>
 
             <div class="my-nav-hovers hide">
@@ -90,8 +88,6 @@
             </div>
           </div>
         </div>
-
-     
 
         <!-- MOBILE NAVIGATION -->
         <div class="menu-container">
@@ -113,18 +109,22 @@
 
         <!-- BREAKFAST --------------------------------------------------------------------->
         <div class="breakfast-container">
-
-          <div class="fixed-spot Breakfast disapear">
-            <a href="#freshbakes" class="Breakfast">Fresh Bakes</a>
-            <a href="#" class="Breakfast">Signature Breakfast</a>
-            <a href="#" class="Breakfast">Healthy</a>
-            <a href="#" class="Breakfast">Eggs Benedict</a>
-            <a href="#" class="Breakfast">Omelete</a>
-            <a href="#sweet" class="Breakfast">Sweet</a>
+          <!-- SUB CATEGORY -->
+          <div class="box fixed-spot Breakfast disapear">
+            <div class="fixed-center">
+              <a href="#freshbakes" class="subtag">Fresh Bakes</a>
+              <a href="#signatureBreakfast" class="subtag"
+                >Signature Breakfast</a
+              >
+              <a href="#healthy" class="subtag">Healthy</a>
+              <a href="#eggsBenedict" class="subtag">Eggs Benedict</a>
+              <a href="#omelete" class="subtag">Omelete</a>
+              <a href="#sweet" class="subtag">Sweet</a>
+            </div>
           </div>
 
-          <div class="box Breakfast" style="width: 100%">
-            <h1 id="freshbakes">Fresh Bakes</h1>
+          <div class="box Breakfast" id="freshbakes" style="width: 100%">
+            <h1>Fresh Bakes</h1>
           </div>
           <div class="box_flex">
             <!-- CLASSIC HOME BAKED CROISSANT... -->
@@ -161,7 +161,12 @@
               </div>
             </div>
           </div>
-          <div class="box Breakfast" style="width: 100%">
+
+          <div
+            class="box Breakfast"
+            id="signatureBreakfast"
+            style="width: 100%"
+          >
             <h1>Signature Breakfast</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -276,7 +281,8 @@
               </div>
             </div>
           </div>
-          <div class="box Breakfast" style="width: 100%">
+
+          <div class="box Breakfast" id="healthy" style="width: 100%">
             <h1>Healthy</h1>
           </div>
           <div class="box_flex">
@@ -323,7 +329,8 @@
               </div>
             </div>
           </div>
-          <div class="box Breakfast" style="width: 100%">
+
+          <div class="box Breakfast" id="eggsBenedict" style="width: 100%">
             <h1>Eggs Benedict</h1>
           </div>
           <div class="box_flex">
@@ -384,7 +391,11 @@
           </div>
 
           <!-- Omelette -->
-          <div class="box Breakfast omelete-breakfast" style="width: 100%">
+          <div
+            class="box Breakfast omelete-breakfast"
+            id="omelete"
+            style="width: 100%"
+          >
             <h1>Omelete</h1>
 
             <div class="omelette-list">
@@ -393,9 +404,10 @@
               Extra: Salmon = R20 | Bacon = R12 | Avo &bull; Feta • Ham = R8
             </div>
           </div>
-          <div class="box Breakfast" style="width: 100%">
-            <h1 id="sweet">Sweet</h1>
-            <!------------------------------------------------------->
+
+          <!-- sweet----------------------------------------------------->
+          <div class="box Breakfast" id="sweet" style="width: 100%">
+            <h1>Sweet</h1>
           </div>
           <div class="box_flex">
             <!-- HOME MADE BANANA BREAD -->
@@ -453,7 +465,22 @@
 
         <!-- Love and Pasta ---------------------------------------------------------------->
         <div class="loveAndPasta-container">
-          <div class="box LoveAndPasta" style="width: 100%">
+          <!-- SUB CATEGORY -->
+          <div class="box fixed-spot LoveAndPasta disapear">
+            <div class="fixed-center">
+              <a href="#toasties" class="subtag">Toasties</a>
+              <a href="#salads" class="subtag">Salads</a>
+              <a href="#rossella" class="subtag">Rossella's Piadine</a>
+              <a href="#mains" class="subtag">Mains</a>
+              <a href="#burgers" class="subtag">Burgers</a>
+              <a href="#lightDishes" class="subtag">Light Dishes</a>
+              <a href="#pasta" class="subtag">Pasta</a>
+              <a href="#ravioli" class="subtag">Ravioli</a>
+              <a href="#pizza" class="subtag">Pizza</a>
+            </div>
+          </div>
+
+          <div class="box LoveAndPasta" id="toasties" style="width: 100%">
             <h1>Toasties</h1>
           </div>
           <div class="box_flex">
@@ -527,7 +554,8 @@
               </div>
             </div>
           </div>
-          <div class="box LoveAndPasta" style="width: 100%">
+
+          <div class="box LoveAndPasta" id="salads" style="width: 100%">
             <h1>Salads</h1>
           </div>
           <div class="box_flex">
@@ -589,7 +617,8 @@
               </div>
             </div>
           </div>
-          <div class="box LoveAndPasta" style="width: 100%">
+
+          <div class="box LoveAndPasta" id="rossella" style="width: 100%">
             <h1>Rossella's Piadine</h1>
           </div>
           <div class="box_flex">
@@ -682,7 +711,8 @@
               </div>
             </div>
           </div>
-          <div class="box LoveAndPasta" style="width: 100%">
+
+          <div class="box LoveAndPasta" id="mains" style="width: 100%">
             <h1>Mains</h1>
           </div>
           <div class="box_flex">
@@ -720,7 +750,8 @@
               </div>
             </div>
           </div>
-          <div class="box LoveAndPasta" style="width: 100%">
+
+          <div class="box LoveAndPasta" id="burgers" style="width: 100%">
             <h1>Burgers</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -783,7 +814,7 @@
           </div>
 
           <!-- Light Dishes -->
-          <div class="box LoveAndPasta" style="width: 100%">
+          <div class="box LoveAndPasta" id="lightDishes" style="width: 100%">
             <h1>Light Dishes</h1>
           </div>
           <div class="box_flex light-dishes-boxflex">
@@ -816,7 +847,7 @@
           </div>
 
           <!-- Pasta -->
-          <div class="box LoveAndPasta" style="width: 100%">
+          <div class="box LoveAndPasta" id="pasta" style="width: 100%">
             <h1>Pasta</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -895,7 +926,7 @@
           </div>
 
           <!-- Ravioli -->
-          <div class="box LoveAndPasta" style="width: 100%">
+          <div class="box LoveAndPasta" id="ravioli" style="width: 100%">
             <h1>Ravioli</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -961,7 +992,7 @@
           </div>
 
           <!-- Pizza -->
-          <div class="box LoveAndPasta" style="width: 100%">
+          <div class="box LoveAndPasta" id="pizza" style="width: 100%">
             <h1>Pizza</h1>
           </div>
           <div class="box_flex">

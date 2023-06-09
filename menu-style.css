@@ -34,31 +34,6 @@ body {
   background: #fff;
 }
 
-.fixed-spot {
-  position: fixed;
-  top: 10px;
-  min-width: 1200px;
-  background-color: #001a2b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  border-radius: 30px;
-  z-index: 99;
-  cursor: pointer;
-}
-
-.fixed-spot a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-  transition: color 120ms;
-}
-
-.fixed-spot a:active {
-  color: #00d467;
-}
-
 .container {
   max-width: 85%;
   margin: 0 auto;
@@ -152,8 +127,6 @@ a::selection {
   transition: opacity 110ms;
 }
 
-
-
 .hover-menu svg {
   color: white;
   font-weight: 400;
@@ -171,7 +144,6 @@ a::selection {
 .my-nav-hovers.show {
   display: block;
 }
-
 
 .my-nav-hovers {
   position: absolute;
@@ -199,7 +171,7 @@ a::selection {
   margin-right: 10px;
   font-weight: 400;
   font-size: 0.8rem;
-  pointer-events:fill;
+  pointer-events: fill;
 }
 
 .burger-menu-container {
@@ -297,15 +269,10 @@ h1 {
   padding-left: 10px;
 }
 
-
-
-
 .light-dishes-extend {
   width: 45%;
   justify-content: start;
 }
-
-
 
 .text h3 {
   text-transform: capitalize;
@@ -426,6 +393,45 @@ h1 {
 
 .burger-animation {
   animation: burger-animation 1s linear;
+}
+
+.fixed-spot {
+  display: none;
+}
+
+.fixed-spot {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  z-index: 99;
+  box-shadow: none;
+  border-radius: none;
+}
+
+.fixed-center {
+  background-color: black;
+  padding: 5px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.fixed-center a {
+  color: lightgray;
+  text-decoration: none;
+  transition: color 120ms;
+  margin: 0 5px;
+ 
+}
+
+.subtag.active {
+  border-bottom: 1px solid green;
+  color: #00d467;
 }
 
 /* Responsive Styles */
@@ -652,4 +658,11 @@ h1 {
     background-color: black;
     border-radius: 10px;
   }
+
+  .fixed-spot {
+    display: none;
+  }
+
+
+
 }

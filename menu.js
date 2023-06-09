@@ -15,6 +15,7 @@ let drinkContainer = document.querySelector(".Drinks");
 let body1 = document.querySelector("body");
 let container = document.querySelector(".container");
 let title = document.querySelector(".title");
+let fixedspot = document.querySelector(".fixed-spot");
 
 let moreBtn = document.querySelector(".hover-menu");
 let showOptions = document.querySelector(".my-nav-hovers");
@@ -36,6 +37,7 @@ list.forEach((el) => {
     // Hide all boxes
     box.forEach((el2) => {
       el2.style.display = "none";
+      document.querySelector(".fixed-center a").style.textDecoration = "none";
     });
 
     // Show the relevant box based on the clicked element's dataset
@@ -95,8 +97,8 @@ function toggleDeskMenu() {
 
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 300) {
-    showOptions.classList.remove("show");
-    showOptions.classList.add("hide");
+      showOptions.classList.remove("show");
+      showOptions.classList.add("hide");
     }
   });
 }
@@ -104,5 +106,53 @@ function toggleDeskMenu() {
 moreBtn.addEventListener("click", toggleDeskMenu);
 document.body.addEventListener("scroll", toggleDeskMenu);
 
+// scroll for sub category
+document.addEventListener("DOMContentLoaded", function () {
+  const breakfastLinks = document.querySelectorAll(".subtag");
 
+  breakfastLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
 
+      const targetId = link.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+
+        // Add background color to the clicked link
+        breakfastLinks.forEach(function (link) {
+          link.style.borderBottom = "";
+          link.style.color = "";
+        });
+        link.style.borderBottom = "1px solid green";
+        link.style.color = "#00d467"; // Set background color for the clicked link
+      }
+    });
+  });
+});
+
+// Define the scroll position where you want to activate the code
+const activationScrollPosition = 293; // Change this value to your desired scroll position
+
+// Function to activate the code when scroll position is reached
+function activateCodeOnScroll() {
+  const scrollPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  if (window.matchMedia("(min-width: 670px)").matches) {
+    if (scrollPosition >= activationScrollPosition) {
+      fixedspot.style.display = "flex";
+    } else {
+      fixedspot.style.display = "none";
+    }
+  } else if (!window.matchMedia("(min-width: 670px)").matches) {
+    fixedspot.style.display = "none";
+  }
+}
+
+// Add event listener for scroll event
+window.addEventListener("scroll", activateCodeOnScroll);
