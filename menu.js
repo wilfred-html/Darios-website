@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Define the scroll position where you want to activate the code
-const activationScrollPosition = 293; // Change this value to your desired scroll position
+const activationScrollPosition = 240; // Change this value to your desired scroll position
 
 // Function to activate the code when scroll position is reached
 function activateCodeOnScroll() {
