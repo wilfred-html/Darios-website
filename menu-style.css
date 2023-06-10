@@ -11,6 +11,30 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* For Android devices */
 }
 
+.stripe1,
+.stripe2,
+.stripe3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-right: 10px solid;
+}
+
+.stripe1 {
+  border-color: #c82a35;
+}
+
+.stripe2 {
+  border-color: #f7f7f7;
+  margin-right: 10px;
+}
+
+.stripe3 {
+  border-color: #008d44;
+  margin-right: 20px;
+}
+
 ::selection {
   background-color: rgb(142, 164, 172);
   color: white;
@@ -233,7 +257,6 @@ h1 {
 
 .box img {
   pointer-events: none;
-  
 }
 
 .blacked-h1-container {
@@ -255,14 +278,12 @@ h1 {
   width: 130px;
   text-align: center;
   background-color: aqua;
-  
 }
 
 .box_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .box .text {
@@ -324,6 +345,10 @@ h1 {
   height: 400px;
 }
 
+footer {
+  position: relative;
+}
+
 .t-cs {
   height: 35px;
   background-color: rgb(34, 34, 34);
@@ -378,6 +403,12 @@ h1 {
 .softdrink-list-container section {
   font-weight: 500;
   font-style: italic;
+}
+
+.addscroll {
+  width: 200px;
+  height: 50px;
+  overflow-y: auto;
 }
 
 @keyframes movement {
@@ -438,7 +469,6 @@ h1 {
   text-decoration: none;
   transition: color 120ms;
   margin: 0 5px;
- 
 }
 
 .subtag.active {
@@ -674,7 +704,4 @@ h1 {
   .fixed-spot {
     display: none;
   }
-
-
-
 }
