@@ -1,0 +1,30 @@
+.text {
+	overflow: auto;
+  padding-right: 10px;
+}
+
+.force-overflow {
+	min-height: 450px;
+}
+
+.text::-webkit-scrollbar {
+	width: 4px;
+	background-color: transparent;
+  margin-left: 20px;
+}
+
+.text::-webkit-scrollbar:hover{
+	width: 10px;
+	background-color: transparent;
+  margin-left: 20px;
+}
+
+.text::-webkit-scrollbar-thumb {
+  background-color: #65bff7;
+}
+
+.text::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+

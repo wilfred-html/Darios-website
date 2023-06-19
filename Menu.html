@@ -7,6 +7,7 @@
 
     <title>Dario's Cafe</title>
     <link rel="stylesheet" href="menu-style.css" />
+    <link rel="stylesheet" href="scrollbar-style.css" />
     <link rel="icon" href="images/Darios-cafe-logo.svg" />
 
     <link
@@ -22,10 +23,9 @@
     />
   </head>
   <body class="body1">
-
-    <div class="stripe1"></div>
-    <div class="stripe2"></div>
-    <div class="stripe3"></div>
+    <div class="stripe1 deactive-stripe"></div>
+    <div class="stripe2 deactive-stripe"></div>
+    <div class="stripe3 deactive-stripe"></div>
 
     <button class="burger-menu-container">
       <div class="burger-title">
@@ -49,9 +49,6 @@
         </svg>
       </div>
     </button>
-
-  
-  
 
     <div class="container">
       <div class="title">
@@ -106,7 +103,6 @@
               <a href="building.html">Gallery</a>
               <a href="index.html#maps">Contact us</a>
             </div>
-
             <li data-color=".Breakfast">Breakfast</li>
             <li data-color=".LoveAndPasta">Love &amp; Pasta</li>
             <li data-color=".Drinks">Drinks</li>
@@ -117,8 +113,8 @@
 
         <!-- BREAKFAST --------------------------------------------------------------------->
         <div class="breakfast-container">
-          <!-- SUB CATEGORY -->
-          <div class="box fixed-spot Breakfast disapear">
+          <!-- SUB CATEGORY BREAKFAST-->
+          <div class="box no-border Breakfast-control fixed-spot disapear">
             <div class="fixed-center">
               <a href="#freshbakes" class="subtag">Fresh Bakes</a>
               <a href="#signatureBreakfast" class="subtag"
@@ -131,7 +127,11 @@
             </div>
           </div>
 
-          <div class="box Breakfast" id="freshbakes" style="width: 100%">
+          <div
+            class="box no-border Breakfast"
+            id="freshbakes"
+            style="width: 100%"
+          >
             <h1>Fresh Bakes</h1>
           </div>
           <div class="box_flex">
@@ -171,7 +171,7 @@
           </div>
 
           <div
-            class="box Breakfast"
+            class="box Breakfast no-border"
             id="signatureBreakfast"
             style="width: 100%"
           >
@@ -290,7 +290,7 @@
             </div>
           </div>
 
-          <div class="box Breakfast" id="healthy" style="width: 100%">
+          <div class="box Breakfast no-border" id="healthy" style="width: 100%">
             <h1>Healthy</h1>
           </div>
           <div class="box_flex">
@@ -338,7 +338,11 @@
             </div>
           </div>
 
-          <div class="box Breakfast" id="eggsBenedict" style="width: 100%">
+          <div
+            class="box Breakfast no-border"
+            id="eggsBenedict"
+            style="width: 100%"
+          >
             <h1>Eggs Benedict</h1>
           </div>
           <div class="box_flex">
@@ -400,7 +404,7 @@
 
           <!-- Omelette -->
           <div
-            class="box Breakfast omelete-breakfast"
+            class="box Breakfast omelete-breakfast no-border"
             id="omelete"
             style="width: 100%"
           >
@@ -414,7 +418,7 @@
           </div>
 
           <!-- sweet----------------------------------------------------->
-          <div class="box Breakfast" id="sweet" style="width: 100%">
+          <div class="box Breakfast no-border" id="sweet" style="width: 100%">
             <h1>Sweet</h1>
           </div>
           <div class="box_flex">
@@ -473,8 +477,8 @@
 
         <!-- Love and Pasta ---------------------------------------------------------------->
         <div class="loveAndPasta-container">
-          <!-- SUB CATEGORY -->
-          <div class="box fixed-spot LoveAndPasta disapear">
+          <!-- SUB CATEGORY loveAndPasta -->
+          <div class="box fixed-spot loveAndPasta-control disapear">
             <div class="fixed-center">
               <a href="#toasties" class="subtag">Toasties</a>
               <a href="#salads" class="subtag">Salads</a>
@@ -488,7 +492,11 @@
             </div>
           </div>
 
-          <div class="box LoveAndPasta" id="toasties" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="toasties"
+            style="width: 100%"
+          >
             <h1>Toasties</h1>
           </div>
           <div class="box_flex">
@@ -563,7 +571,11 @@
             </div>
           </div>
 
-          <div class="box LoveAndPasta" id="salads" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="salads"
+            style="width: 100%"
+          >
             <h1>Salads</h1>
           </div>
           <div class="box_flex">
@@ -626,7 +638,11 @@
             </div>
           </div>
 
-          <div class="box LoveAndPasta" id="rossella" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="rossella"
+            style="width: 100%"
+          >
             <h1>Rossella's Piadine</h1>
           </div>
           <div class="box_flex">
@@ -720,7 +736,11 @@
             </div>
           </div>
 
-          <div class="box LoveAndPasta" id="mains" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="mains"
+            style="width: 100%"
+          >
             <h1>Mains</h1>
           </div>
           <div class="box_flex">
@@ -759,7 +779,11 @@
             </div>
           </div>
 
-          <div class="box LoveAndPasta" id="burgers" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="burgers"
+            style="width: 100%"
+          >
             <h1>Burgers</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -822,7 +846,11 @@
           </div>
 
           <!-- Light Dishes -->
-          <div class="box LoveAndPasta" id="lightDishes" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="lightDishes"
+            style="width: 100%"
+          >
             <h1>Light Dishes</h1>
           </div>
           <div class="box_flex light-dishes-boxflex">
@@ -855,7 +883,11 @@
           </div>
 
           <!-- Pasta -->
-          <div class="box LoveAndPasta" id="pasta" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="pasta"
+            style="width: 100%"
+          >
             <h1>Pasta</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -934,7 +966,11 @@
           </div>
 
           <!-- Ravioli -->
-          <div class="box LoveAndPasta" id="ravioli" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="ravioli"
+            style="width: 100%"
+          >
             <h1>Ravioli</h1>
           </div>
           <div class="box_flex box_flex-middle">
@@ -1000,7 +1036,11 @@
           </div>
 
           <!-- Pizza -->
-          <div class="box LoveAndPasta" id="pizza" style="width: 100%">
+          <div
+            class="box LoveAndPasta no-border"
+            id="pizza"
+            style="width: 100%"
+          >
             <h1>Pizza</h1>
           </div>
           <div class="box_flex">
@@ -1179,11 +1219,28 @@
 
         <!-- Drinks ------------------------------------------------------------------------>
         <div class="drink-list-container">
-          <!-- sparkling wine -->
-          <div class="box Drinks blacked-h1-container" style="width: 100%">
-            <h1>Sparkling Wine</h1>
+          <!-- SUB CATEGORY DRINKD-->
+          <div class="box-2 Drinks-control fixed-spot disapear no-border">
+            <div class="fixed-center">
+              <a href="#Sparkling" class="subtag">Sparkling</a>
+              <a href="#whiteWine" class="subtag">White Wine</a>
+              <a href="#mains" class="subtag">Mains</a>
+              <a href="#burgers" class="subtag">Burgers</a>
+              <a href="#lightDishes" class="subtag">Light Dishes</a>
+              <a href="#pasta" class="subtag">Pasta</a>
+              <a href="#ravioli" class="subtag">Ravioli</a>
+              <a href="#pizza" class="subtag">Pizza</a>
+            </div>
           </div>
 
+          <!-- sparkling wine -->
+          <div
+            class="box Drinks blacked-h1-container no-border"
+            id="Sparkling"
+            style="width: 100%"
+          >
+            <h1>Sparkling Wine</h1>
+          </div>
           <div class="box_flex drinks">
             <!-- Pongracz ... -->
             <div class="box Drinks blacked-box">
@@ -1223,7 +1280,10 @@
           </div>
 
           <!-- White wine -->
-          <div class="box Drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1 style="text-decoration: underline white">White Wine</h1>
           </div>
 
@@ -1316,7 +1376,10 @@
           </div>
 
           <!-- rose wine -->
-          <div class="box Drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1 style="text-decoration: underline rosybrown">Rose Wine</h1>
           </div>
           <div
@@ -1424,7 +1487,10 @@
           </div>
 
           <!-- Beers -->
-          <div class="box Drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1
               style="text-decoration: underline rgb(182, 109, 0); color: white"
             >
@@ -1545,7 +1611,10 @@
         <!-- Soft Drinks ------------------------------------------------------------------->
         <div class="softdrink-list-container">
           <!-- Hot Drinks -->
-          <div class="box Soft-drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Soft-drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1>Hot Drinks</h1>
           </div>
           <div class="box_flex Soft-drinks box_flex-middle">
@@ -1683,7 +1752,10 @@
           </div>
 
           <!-- Cold Drinks -->
-          <div class="box Soft-drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Soft-drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1 style="text-decoration: underline white">Cold Drinks</h1>
           </div>
           <div class="box_flex box_flex-middle Soft-drinks">
@@ -1692,12 +1764,14 @@
               <div class="box_img">
                 <img src="images/nalu-blanc.jpg" alt="" />
               </div>
+
               <div class="text">
                 <h3>SODAS</h3>
                 <hr />
                 <section>R28.00</section>
               </div>
             </div>
+
             <!--MIXERS 200ml  -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
@@ -1777,7 +1851,10 @@
           </div>
 
           <!-- Fresh Juice -->
-          <div class="box Soft-drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Soft-drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1 style="text-decoration: underline white">Fresh Juice</h1>
           </div>
           <div class="box_flex box_flex-middle Soft-drinks">
@@ -1944,7 +2021,10 @@
           </div>
 
           <!-- Smoothies / Bowls -->
-          <div class="box Soft-drinks blacked-h1-container" style="width: 100%">
+          <div
+            class="box Soft-drinks blacked-h1-container no-border"
+            style="width: 100%"
+          >
             <h1 style="text-decoration: underline white">Smoothies / Bowls</h1>
           </div>
           <div class="box_flex box_flex-middle Soft-drinks">
@@ -1987,7 +2067,7 @@
               <div class="text">
                 <h3>THE NUTTY 790</h3>
                 <hr />
-                <section>R62.00 - 78</section>
+                <section>R62.00 - R78</section>
                 <article class="addscroll">
                   Peanut Butter &bull; Banana &bull; Chal Seed &bull; Almond
                   Milk &bull; Dates &bull; (<span>For a Bowl</span>- Extra
@@ -1997,56 +2077,38 @@
               </div>
             </div>
 
-            <!-- BOS ICED TEA 300ml ... -->
+            <!-- CHOCCIE ... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
                 <img src="images/ayama-chenin-blanc.jpg" alt="" />
               </div>
               <div class="text">
-                <h3>BOS ICED TEA 300ml</h3>
+                <h3>CHOCCIE</h3>
                 <hr />
-                <section>R32.00</section>
+                <section>R58 - R75</section>
+                <article class="addscroll">
+                  Cocoa &bull; Banana &bull; Salt &bull; Cinnamon &bull; Almond
+                  &bull; Butter &bull; Alternative Milk (<span>For a Bowl</span
+                  >- Extra Banana &bull; Coconut &bull; Chai Seeds)
+                </article>
               </div>
             </div>
 
-            <!-- ICED COFFEE  -->
+            <!-- BERRY BERRY NICE  -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
                 <img src="images/ayama-vermen.jpg" alt="" />
               </div>
               <div class="text">
-                <h3>ICED COFFEE</h3>
+                <h3>BERRY BERRY NICE</h3>
                 <hr />
-                <section>R45.00</section>
-                <article>Espresso &amp; Ice Blended</article>
-              </div>
-            </div>
-
-            <!-- MILKSHAKES... -->
-            <div class="box Soft-drinks blacked-box">
-              <div class="box_img">
-                <img src="images/wolftrap.webp" alt="" />
-              </div>
-              <div class="text">
-                <h3>MILKSHAKES</h3>
-                <hr />
-                <section>R40.00</section>
-                <article>
-                  Chocolate, Lime, Strawberry, Vanilla, Coffee, Bubblegum,
-                  Banana
+                <section>R58 - R75</section>
+                <article class="addscroll">
+                  Strawberries &bull; Banana &bull; Blueberries &bull; Chai
+                  seeds &bull; Dates &bull; Alternatives (<span>For a Bowl</span
+                  >- Extra Banana Slices &bull; Berries &bull; Chai Seeds &bull;
+                  Granola)
                 </article>
-              </div>
-            </div>
-
-            <!-- ROCK SHANDY... -->
-            <div class="box Soft-drinks blacked-box">
-              <div class="box_img">
-                <img src="images/durbanville-chardonnay.jpg" alt="" />
-              </div>
-              <div class="text">
-                <h3>ROCK SHANDY</h3>
-                <hr />
-                <section>R40.00</section>
               </div>
             </div>
           </div>
@@ -2054,9 +2116,6 @@
       </div>
     </div>
 
- 
-
-    
     <footer>
       <div class="t-cs">
         <div class="sigebrand">

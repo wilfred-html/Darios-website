@@ -55,13 +55,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: white;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out; 
 }
 
 .mytitle,
 .myslogan,
-.mydiv {
+.mydiv, 
+.dateOfEstablishment {
   display: flex;
   justify-content: center;
 }
@@ -72,17 +74,62 @@ header {
   margin-bottom: 30px;
 }
 
-.mytitle {
-  padding-top: 30px;
-  font-size: 20px;
-  font-family: "Solway", serif;
+.mytitle-container {
+  margin-top: 22px;
 }
+
+.star-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.star-flag:nth-child(2) {
+  margin-right: 10px;
+}
+
+.star-flag:nth-child(1), .star-flag:nth-child(4) {
+  padding: 12px;
+}
+
+.star-flag {
+  margin: 0;
+}
+
+
+.mytitle {
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+.mytitle p {
+  font-family: "Solway", serif;
+
+}
+
+.mytitle-name{
+  font-size: 20px;
+}
+
+.dateOfEstablishment {
+  font-size: 14px;
+  /* font-style: italic; */
+  margin-top: 10px;
+}
+
 
 .myslogan {
   letter-spacing: 5px;
   font-size: 57.9px;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0px 10px 0px;
+}
+
+.mydiv {
+  width: 100%;
+
 }
 
 .mybtn, .mybtn2 {
@@ -554,17 +601,29 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  
+
+  .mytitle-container {
+    margin-top: 0px;
+  }
 
   .mytitle {
-    padding-top: 60px;
     font-size: 20px;
+    font-family: "Solway", serif;
+
+  }
+
+  .mytitle-name {
     font-family: "Solway", serif;
   }
 
   .myslogan {
     letter-spacing: 5px;
     font-size: 57.9px;
+    margin-bottom: 50px;
+  }
+
+  .mydiv {
+    margin-top: -100px;
   }
 
   .box1 {
