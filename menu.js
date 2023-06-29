@@ -4,6 +4,7 @@ let list = document.querySelectorAll(".list li");
 // Retrieve other elements
 let box = document.querySelectorAll(".box");
 let box2 = document.querySelectorAll(".box-2");
+let box3 = document.querySelectorAll(".box3");
 let burgerMenu = [
   document.querySelector(".burger-menu"),
   document.querySelector(".burger-menu-container p"),
@@ -41,7 +42,13 @@ list.forEach((el) => {
       document.querySelector(".fixed-center a").style.textDecoration = "none";
     });
 
+    box3.forEach((el2) => {
+      el2.style.display = "none";
+    });
+
     // Show the relevant box based on the clicked element's dataset
+
+    
     document.querySelectorAll(e.target.dataset.color).forEach((el3) => {
       el3.style.display = "flex";
     });
@@ -143,6 +150,8 @@ const activationScrollPosition = 240; // Change this value to your desired scrol
 let breakfastControl = document.querySelector(".Breakfast-control");
 let loveAndPastaControl = document.querySelector(".loveAndPasta-control");
 let drinksControl = document.querySelector(".Drinks-control");
+let softdrinkControl = document.querySelector(".softdrink-control");
+let dolciControl = document.querySelector(".dolci-control");
 
 function activateCodeOnScroll() {
   const scrollPosition =
@@ -164,10 +173,17 @@ function activateCodeOnScroll() {
       (document.querySelector(".Drinks").style.display === "flex")
     ) {
       drinksControl.style.display = "flex";
+    } else if (
+      (scrollPosition >= activationScrollPosition) &
+      (document.querySelector(".Soft-drinks").style.display === "flex")
+    ) {
+      softdrinkControl.style.display = "flex";
     } else {
       fixedspot.style.display = "none";
       loveAndPastaControl.style.display = "none";
       drinksControl.style.display = "none";
+      softdrinkControl.style.display = "none";
+      dolciControl.style.display = "none";
     }
   } else if (!window.matchMedia("(min-width: 670px)").matches) {
     fixedspot.style.display = "none";

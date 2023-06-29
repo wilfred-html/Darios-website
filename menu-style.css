@@ -88,7 +88,11 @@ body {
   justify-content: center;
   margin-bottom: 50px;
   white-space: nowrap;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding-bottom: 20px;
+  /* background-color: #00d467; */
 }
+
 
 .content .menu-default li,
 .menu-default a {
@@ -131,7 +135,6 @@ body {
 
 .my-hover-container {
   position: relative;
-  margin-top: 5px;
 }
 
 a::selection {
@@ -143,19 +146,12 @@ a::selection {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   border-radius: 20px;
-  padding: 0px 10px;
   border: none;
-  transform: scale(0.8);
   transition: opacity 110ms;
 }
 
-.hover-menu svg {
-  color: white;
-  font-weight: 400;
-  transform: scale(1);
-}
+
 
 .hover-menu:active {
   opacity: 0.7;
@@ -176,7 +172,6 @@ a::selection {
   background-color: rgba(0, 0, 0, 0.848);
   padding: 5px 10px;
   top: 30px;
-  left: -10px;
   right: 0px;
   justify-content: center;
   border-radius: 10px;
@@ -213,17 +208,7 @@ h1 {
   width: 100%;
 }
 
-.omelette-list {
-  width: 500px;
-  font-style: italic;
-  margin: 0 auto;
-  border-radius: 20px;
-}
 
-.omelette-list li {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
 
 .upscale {
   font-size: 0.51rem;
@@ -241,13 +226,11 @@ h1 {
   column-gap: 20px;
 }
 
-
-
 .box {
   width: 32%;
   border-radius: 3px;
   padding: 0px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: top;
   margin-bottom: 20px;
@@ -266,8 +249,8 @@ h1 {
 }
 
 .blacked-h1-container {
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  color: black;
 }
 
 .blacked-box {
@@ -275,20 +258,23 @@ h1 {
   cursor: default;
 }
 
-.blacked-box:hover {
-  background-color: rgba(0, 0, 0, 0.055);
-}
+  /* .blacked-box:hover {
+    background-color: rgba(0, 0, 0, 0.055);
+  } */
 
 .box .box_img {
   height: 130px;
   width: 130px;
   text-align: center;
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
 }
 
 .box_img img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   object-fit: cover;
 }
 
@@ -311,6 +297,11 @@ h1 {
 
 .text h3 {
   text-transform: capitalize;
+  font-weight: 600;
+}
+
+.Drinks h3   {
+  font-weight: 500;
 }
 
 .text hr {
@@ -323,6 +314,10 @@ h1 {
 .text section {
   font-weight: 600;
   margin-bottom: -5px;
+}
+
+.Drinks section {
+  font-weight: 400;
 }
 
 .text .stars {
@@ -375,7 +370,14 @@ footer {
 
 .box {
   display: none;
+  box-shadow: 6px 3px 6px lightgray;
 }
+
+.box3 {
+  display: none;
+  color: black;
+}
+
 
 .Breakfast {
   display: flex;
@@ -384,22 +386,40 @@ footer {
 .omelete-breakfast {
   display: flex;
   flex-direction: column;
-  color: white;
   margin: 20px 20px 0px 0;
+ 
 }
+
+.omelette-list {
+  width: 600px;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: monospace;
+  margin-top: 5px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 3px 6px lightgray;
+}
+
+#omlette {
+  background-color: #c82a35;
+}
+
 
 .drink-list-container,
 .dark-mode {
   color: white;
   padding: 0px 16px;
-  padding-top: 40px;
 }
 
 .drink-list-container .box {
-  background-color: #025385;
+  background-color: rgb(68, 68, 68);
   min-height: 210px;
   align-items: center;
 }
+
+
 
 .softdrink-list-container .box {
   background-color: white;
@@ -414,6 +434,8 @@ footer {
 .addscroll span{
   color: rgb(255, 81, 0);
 }
+
+
 
 @keyframes movement {
   0% {
@@ -453,6 +475,7 @@ footer {
   z-index: 99;
   box-shadow: none;
   border-radius: none;
+  pointer-events: inset none;
 }
 
 .fixed-center {
@@ -486,8 +509,17 @@ footer {
 }
 
 .omelete-breakfast {
-  background-color: #50431e;
+  color: black;
 }
+
+.dolci-container {
+  padding-bottom: 100px;
+}
+
+.dolci-container h1{
+  color: black;
+}
+
 
 
 /* Responsive Styles */
@@ -521,6 +553,12 @@ footer {
   .deactive-stripe {
     display: none;
   }
+
+  .blacked-h1-container {
+    background-color: black;
+    color: white;
+  }
+  
 }
 
 @media (max-width: 670px) {
@@ -547,6 +585,14 @@ footer {
   .box {
     width: 100%;
     flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .box3 {
+    width: 100%;
+  }
+
+  .space-at-box {
     padding: 20px;
   }
 
@@ -644,7 +690,7 @@ footer {
     flex-direction: column;
     align-items: start;
     position: fixed;
-    top: 59px;
+    top: 58px;
     left: 0;
     right: 0;
     padding: 20px;
@@ -667,7 +713,7 @@ footer {
 
   .li-a {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     margin-bottom: 18px;
     color: white;
@@ -713,7 +759,7 @@ footer {
   .drink-list-container {
     background-color: rgb(31, 31, 31);
     padding: 0px 16px;
-    padding-top: 40px;
+    padding-top: 0px;
   }
 
   .drink-list-container .box {
@@ -721,7 +767,18 @@ footer {
     border-radius: 10px;
   }
 
+
+
+  .dolci-container {
+    padding-bottom: 20px;
+  }
+
   .fixed-spot {
     display: none;
+  }
+
+  .space-at-drinks {
+    height: 10px;
+    width: 0;
   }
 }

@@ -129,7 +129,7 @@ header {
 
 .mydiv {
   width: 100%;
-
+  /* background-color: chartreuse; */
 }
 
 .mybtn, .mybtn2 {
@@ -147,7 +147,6 @@ header {
 }
 
 .mybtn2 {
-  height: 36px;
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -157,13 +156,15 @@ header {
 .mybtn2:active {
   background-color: white;
   color: black;
-  border: 1px solid  ;
+  border: 1px solid black;
 }
 
 .mybtn:active {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  padding: 0 11px;
+
 }
 
 /* heroboxes */

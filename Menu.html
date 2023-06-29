@@ -71,23 +71,12 @@
 
           <div class="my-hover-container">
             <a class="hover-menu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-three-dots"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-                />
-              </svg>
+              other <span class="down-pointer">&#x25BC;</span>
             </a>
 
             <div class="my-nav-hovers hide">
               <a href="index.html">Home</a>
-              <a href="menu.html">Food menu</a>
+              <!-- <a href="menu.html">Food menu</a> -->
               <a href="building.html">Gallery</a>
               <a href="index.html#maps">Contact us</a>
             </div>
@@ -99,7 +88,7 @@
           <div class="list menu-navigation">
             <div class="li-a">
               <a href="index.html">Home</a>
-              <a href="menu.html">Food menu</a>
+              <!-- <a href="menu.html">Food menu</a> -->
               <a href="building.html">Gallery</a>
               <a href="index.html#maps">Contact us</a>
             </div>
@@ -1224,24 +1213,21 @@
             <div class="fixed-center">
               <a href="#Sparkling" class="subtag">Sparkling</a>
               <a href="#whiteWine" class="subtag">White Wine</a>
-              <a href="#mains" class="subtag">Mains</a>
-              <a href="#burgers" class="subtag">Burgers</a>
-              <a href="#lightDishes" class="subtag">Light Dishes</a>
-              <a href="#pasta" class="subtag">Pasta</a>
-              <a href="#ravioli" class="subtag">Ravioli</a>
-              <a href="#pizza" class="subtag">Pizza</a>
+              <a href="#roseWine" class="subtag">Rose Wine</a>
+              <a href="#redWine" class="subtag">Red Wine</a>
+              <a href="#beers" class="subtag">Beers</a>
             </div>
           </div>
-
+          <div class="box3 Drinks space-at-box"></div>
           <!-- sparkling wine -->
           <div
-            class="box Drinks blacked-h1-container no-border"
+            class="box3 Drinks blacked-h1-container no-border"
             id="Sparkling"
             style="width: 100%"
           >
             <h1>Sparkling Wine</h1>
           </div>
-          <div class="box_flex drinks">
+          <div class="box_flex Drinks">
             <!-- Pongracz ... -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
@@ -1281,10 +1267,11 @@
 
           <!-- White wine -->
           <div
-            class="box Drinks blacked-h1-container no-border"
+            class="box3 Drinks blacked-h1-container no-border"
+            id="whiteWine"
             style="width: 100%"
           >
-            <h1 style="text-decoration: underline white">White Wine</h1>
+            <h1>White Wine</h1>
           </div>
 
           <div class="box_flex box_flex-middle drinks blacked-box-container">
@@ -1377,7 +1364,8 @@
 
           <!-- rose wine -->
           <div
-            class="box Drinks blacked-h1-container no-border"
+            class="box3 Drinks blacked-h1-container no-border"
+            id="roseWine"
             style="width: 100%"
           >
             <h1 style="text-decoration: underline rosybrown">Rose Wine</h1>
@@ -1414,8 +1402,12 @@
           </div>
 
           <!-- Red Wine -->
-          <div class="box Drinks blacked-h1-container" style="width: 100%">
-            <h1 style="text-decoration: underline rgb(182, 0, 0); color: white">
+          <div
+            class="box3  Drinks blacked-h1-container"
+            id="redWine"
+            style="width: 100%"
+          >
+            <h1 style="text-decoration: underline rgb(182, 0, 0)">
               Red Wine
             </h1>
           </div>
@@ -1488,16 +1480,17 @@
 
           <!-- Beers -->
           <div
-            class="box Drinks blacked-h1-container no-border"
+            class="box3 Drinks blacked-h1-container no-border"
+            id="beers"
             style="width: 100%"
           >
             <h1
-              style="text-decoration: underline rgb(182, 109, 0); color: white"
+              style="text-decoration: underline rgb(182, 109, 0)"
             >
               Beers
             </h1>
           </div>
-          <div class="box_flex drinks">
+          <div class="box_flex Drinks">
             <!-- Castle Lite... -->
             <div class="box Drinks blacked-box">
               <div class="box_img">
@@ -1610,9 +1603,20 @@
 
         <!-- Soft Drinks ------------------------------------------------------------------->
         <div class="softdrink-list-container">
+          <!-- SUB CATEGORY soft Drinks-->
+          <div class="box-2 softdrink-control fixed-spot disapear no-border">
+            <div class="fixed-center">
+              <a href="#hotDrinks" class="subtag">Hot Drinks</a>
+              <a href="#coldDrinks" class="subtag">Cold Drinks</a>
+              <a href="#freshJuice" class="subtag">Fresh Juice</a>
+              <a href="#smoothiesBowls" class="subtag">Smoothies / Bowls</a>
+            </div>
+          </div>
+
           <!-- Hot Drinks -->
           <div
             class="box Soft-drinks blacked-h1-container no-border"
+            id="hotDrinks"
             style="width: 100%"
           >
             <h1>Hot Drinks</h1>
@@ -1621,7 +1625,7 @@
             <!-- ESPRESSO ... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/espresso.webp" alt="" />
+                <img src="images/Soft-drinks/esspresso.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>ESPRESSO</h3>
@@ -1633,7 +1637,7 @@
             <!--CAPPUCCINO  -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/cappuccino.jpg" alt="" />
+                <img src="images/Soft-drinks/cappuccino.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>CAPPUCCINO</h3>
@@ -1645,7 +1649,7 @@
             <!--GRANDE CAPPUCCINO  -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/cappuccino.jpg" alt="" />
+                <img src="images/Soft-drinks/grande-cappuccino.webp" alt="" />
               </div>
               <div class="text">
                 <h3>GRANDE CAPPUCCINO</h3>
@@ -1657,7 +1661,7 @@
             <!-- AMERICANO... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/americano.jpg" alt="" />
+                <img src="images/Soft-drinks/americano.webp" alt="" />
               </div>
               <div class="text">
                 <h3>AMERICANO</h3>
@@ -1669,7 +1673,7 @@
             <!-- CAFFE LATTE... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/americano.jpg" alt="" />
+                <img src="images/Soft-drinks/Cafe-Latte.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>CAFFE LATTE</h3>
@@ -1681,7 +1685,7 @@
             <!-- MOCHA  -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/cappuccino.jpg" alt="" />
+                <img src="images/Soft-drinks/Caf-Mocha.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>MOCHA</h3>
@@ -1693,7 +1697,7 @@
             <!-- BABYCCINO... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/americano.jpg" alt="" />
+                <img src="images/Soft-drinks/babyccino.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>BABYCCINO</h3>
@@ -1705,7 +1709,7 @@
             <!-- HOT CHOCOLATE... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/americano.jpg" alt="" />
+                <img src="images/Soft-drinks/hot-chocolate.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>HOT CHOCOLATE</h3>
@@ -1717,7 +1721,7 @@
             <!-- CHAI LATTE... -->
             <div class="box Soft-drinks blacked-box">
               <div class="box_img">
-                <img src="images/americano.jpg" alt="" />
+                <img src="images/Soft-drinks/chai-latte.jpg" alt="" />
               </div>
               <div class="text">
                 <h3>CHAI LATTE</h3>
@@ -1753,10 +1757,11 @@
 
           <!-- Cold Drinks -->
           <div
-            class="box Soft-drinks blacked-h1-container no-border"
+            class="box Soft-drinks no-border"
+            id="coldDrinks"
             style="width: 100%"
           >
-            <h1 style="text-decoration: underline white">Cold Drinks</h1>
+            <h1>Cold Drinks</h1>
           </div>
           <div class="box_flex box_flex-middle Soft-drinks">
             <!-- SODAS ... -->
@@ -1853,9 +1858,10 @@
           <!-- Fresh Juice -->
           <div
             class="box Soft-drinks blacked-h1-container no-border"
+            id="freshJuice"
             style="width: 100%"
           >
-            <h1 style="text-decoration: underline white">Fresh Juice</h1>
+            <h1>Fresh Juice</h1>
           </div>
           <div class="box_flex box_flex-middle Soft-drinks">
             <!-- THE ACE ... -->
@@ -2023,9 +2029,10 @@
           <!-- Smoothies / Bowls -->
           <div
             class="box Soft-drinks blacked-h1-container no-border"
+            id="smoothiesBowls"
             style="width: 100%"
           >
-            <h1 style="text-decoration: underline white">Smoothies / Bowls</h1>
+            <h1>Smoothies / Bowls</h1>
           </div>
           <div class="box_flex box_flex-middle Soft-drinks">
             <!-- GREEN SMOOTHIE ... -->
@@ -2109,6 +2116,99 @@
                   >- Extra Banana Slices &bull; Berries &bull; Chai Seeds &bull;
                   Granola)
                 </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Dolci -->
+        <div class="dolci-container">
+          <!-- Hot Drinks -->
+          <div
+            class="box Dolci blacked-h1-container no-border"
+            id="Dolci-hotdrink"
+            style="width: 100%"
+          >
+            <h1>Dolci</h1>
+          </div>
+
+          <div class="box_flex Dolci">
+            <!-- THE ULTIMATE LEMON MERINGUE... -->
+            <div class="box Dolci">
+              <div class="box_img">
+                <img src="images/Lemon-meringue.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>THE ULTIMATE LEMON MERINGUE</h3>
+                <hr />
+                <section>R55.00</section>
+                <article>Hout Bay's Favourite</article>
+              </div>
+            </div>
+
+            <!--CARROT CAKE  -->
+            <div class="box Dolci">
+              <div class="box_img">
+                <img src="images/carrot-cake.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>CARROT CAKE</h3>
+                <hr />
+                <section>R55.00</section>
+                <article>A classic Moist Cake Topped with Crea Cheese</article>
+              </div>
+            </div>
+
+            <!--TIRAMISU  -->
+            <div class="box Dolci">
+              <div class="box_img">
+                <img src="images/tiramisu.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>TIRAMISU</h3>
+                <hr />
+                <section>R55.00</section>
+                <article>Italy's most beloved Coffee Dessert</article>
+              </div>
+            </div>
+
+            <!-- BAKED CHEESE CAKE... -->
+            <div class="box Dolci">
+              <div class="box_img">
+                <img src="images/carrot-cake.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h3>BAKED CHEESE CAKE</h3>
+                <hr />
+                <section>R55.00</section>
+              </div>
+            </div>
+
+            <!-- AFFOGATO AL CAFFE... -->
+            <div class="box Dolci">
+              <div class="box_img">
+                <img src="images/affogato-al-caffe.webp" alt="" />
+              </div>
+              <div class="text">
+                <h3>AFFOGATO AL CAFFE</h3>
+                <hr />
+                <section>R48.00</section>
+                <article>
+                  Gelato drenched in espresso with a drop of Grappa
+                </article>
+              </div>
+            </div>
+
+            <!-- CHOCOLATE CAKE  -->
+            <div class="box Dolci">
+              <div class="box_img">
+                <img src="images/chocolate-cake.webp" alt="" />
+              </div>
+              <div class="text">
+                <h3>CHOCOLATE CAKE</h3>
+                <hr />
+                <section>R55.00</section>
+                <article>Need we say more .....</article>
               </div>
             </div>
           </div>
