@@ -48,7 +48,6 @@ list.forEach((el) => {
 
     // Show the relevant box based on the clicked element's dataset
 
-    
     document.querySelectorAll(e.target.dataset.color).forEach((el3) => {
       el3.style.display = "flex";
     });
@@ -115,7 +114,7 @@ moreBtn.addEventListener("click", toggleDeskMenu);
 document.body.addEventListener("scroll", toggleDeskMenu);
 
 // scroll for sub category
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function () {
   const breakfastLinks = document.querySelectorAll(".subtag");
 
   breakfastLinks.forEach(function (link) {
@@ -136,7 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
           link.style.borderBottom = "";
           link.style.color = "";
         });
-        link.style.borderBottom = "1px solid green";
         link.style.color = "#00d467"; // Set background color for the clicked link
       }
     });
@@ -153,16 +151,21 @@ let drinksControl = document.querySelector(".Drinks-control");
 let softdrinkControl = document.querySelector(".softdrink-control");
 let dolciControl = document.querySelector(".dolci-control");
 
+
+
 function activateCodeOnScroll() {
   const scrollPosition =
     window.pageYOffset || document.documentElement.scrollTop;
+
+
 
   if (window.matchMedia("(min-width: 670px)").matches) {
     if (
       (scrollPosition >= activationScrollPosition) &
       (document.querySelector(".Breakfast").style.display === "flex")
     ) {
-      fixedspot.style.display = "flex";
+      breakfastControl.style.display = "flex";
+
     } else if (
       (scrollPosition >= activationScrollPosition) &
       (document.querySelector(".LoveAndPasta").style.display === "flex")
@@ -179,7 +182,8 @@ function activateCodeOnScroll() {
     ) {
       softdrinkControl.style.display = "flex";
     } else {
-      fixedspot.style.display = "none";
+      breakfastControl.style.display = "none";
+      // fixedspot.style.display = "none";
       loveAndPastaControl.style.display = "none";
       drinksControl.style.display = "none";
       softdrinkControl.style.display = "none";

@@ -4,7 +4,6 @@
 * {
   padding: 0;
   margin: 0;
-  list-style: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: transparent; /* For iOS devices */
@@ -26,11 +25,11 @@ img {
 }
 
 body {
-  background: #fff;
+  background: black;
+  color: white;
 }
 
 .container {
-  max-width: 85%;
   margin: 50px auto;
   text-align: center;
   box-sizing: border-box; /* Include padding in the width */
@@ -48,19 +47,38 @@ body {
 }
 
 .container .title p {
-  color: #333;
+  color: white;
   font-size: 14px;
 }
+
+.description {
+  color: white;
+}
+
+
+.description li {
+  font-family: "Lobster", cursive;
+  font-size: 1rem;
+  text-align: start;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
 
 .content .menu-default {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  white-space: nowrap;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding-bottom: 20px;
+  /* background-color: #00d467; */
 }
+
 
 .content .menu-default li,
 .menu-default a {
-  color: #000;
+  color: white;
   margin: 0 15px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -71,7 +89,7 @@ body {
 }
 
 .content .menu-default li::after,
-.menu-default a::after {
+.my-nav-hovers a::after {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -88,153 +106,10 @@ body {
   width: 100%;
 }
 
-.content .menu-default li:nth-child(2) {
+.content .menu-default li:nth-child(1) {
   color: #65bff7;
 }
 
-.menu-container,
-.menu-container .menu-navigation {
-  display: none;
-}
-
-.burger-menu {
-  display: none;
-}
-
-h1 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  text-decoration: underline #65bff7;
-  font-family: "Qwigley", cursive;
-  letter-spacing: 8px;
-  font-weight: 400;
-  font-size: 2.7rem;
-  width: 100%;
-}
-
-.omelette-list {
-  background-color: white;
-  color: black;
-  width: 600px;
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 20px;
-}
-
-.omelette-list li {
-  margin-bottom: 10px;
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-  /* letter-spacing: 4px; */
-}
-
-.upscale {
-  font-size: 0.51rem;
-}
-
-.box_flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 32%;
-  border-radius: 3px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: top;
-  margin-bottom: 20px;
-  animation: movement 1s ease-in-out;
-  box-shadow: inset 0 0 2px lightgray;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.box img {
-  pointer-events: none;
-}
-
-.blacked-h1-container {
-  background-color: black;
-  color: white;
-}
-
-.blacked-box {
-  margin-top: 20px;
-  cursor: default;
-}
-
-.blacked-box:hover {
-  background-color: rgba(0, 0, 0, 0.055);
-}
-
-.box .box_img {
-  /* width: 35%; */
-  height: 130px;
-  width: 130px;
-  text-align: center;
-  background-color: aqua;
-}
-
-.box_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.box .text {
-  text-align: left;
-  width: 60%;
-  height: 130px;
-  padding-left: 10px;
-}
-
-.text h3 {
-  text-transform: capitalize;
-}
-
-.text hr {
-  width: 50px;
-  background: #d4a373;
-  height: 3px;
-  margin: 5px 0 10px 0;
-}
-
-.text section {
-  font-weight: 600;
-  margin-bottom: -5px;
-}
-
-.text .stars {
-  margin-bottom: -2px;
-}
-
-.text .stars i {
-  font-size: 13px;
-  color: #d4a373;
-}
-
-.text article {
-  font-size: 0.8rem;
-  font-style: italic;
-  font-family: monospace;
-  color: gray;
-  margin-top: 5px;
-}
-
-.text .drink-article {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #008d44;
-}
-
-.length {
-  background-color: #65bff7;
-  height: 400px;
-}
 
 .t-cs {
   height: 35px;
@@ -251,199 +126,4 @@ h1 {
   text-decoration: none;
   color: lightgray;
   padding: 0 5px;
-}
-
-.stripe1 {
-  border-right: 12px solid #c82a35;
-}
-
-.stripe2 {
-  border-right: 12px solid #f7f7f7;
-  margin-right: 10px;
-}
-
-.stripe3 {
-  border-right: 12px solid #008d44;
-  margin-right: 10px;
-}
-
-.box {
-  display: none;
-}
-
-.Breakfast {
-  display: flex;
-}
-
-.drink-list-container,
-.dark-mode {
-  color: white;
-  padding: 0px 16px;
-  padding-top: 40px;
-}
-
-.drink-list-container .box {
-  background-color: #025385;
-  min-height: 210px;
-  align-items: center;
-}
-
-@keyframes movement {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Responsive Styles */
-
-@media (max-width: 991px) {
-  .container .title {
-    width: 80%;
-  }
-  .box .box_img {
-    text-align: left;
-  }
-  .box_img img {
-    width: 170px;
-    height: 170px;
-  }
-  .box {
-    width: 100%;
-  }
-  .box .text {
-    width: 70%;
-  }
-}
-
-@media (max-width: 670px) {
-  .container {
-    max-width: 100%;
-    padding: 0px;
-  }
-
-  .box {
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 20px;
-  }
-
-  .box .box_img {
-    width: 100%;
-  }
-
-  .box_img img {
-    width: 100%;
-  }
-
-  .box_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .box .text {
-    width: 100%;
-    height: 130px;
-    padding-left: 0;
-    margin-top: 8px;
-  }
-
-  .text article {
-    line-height: 25px;
-  }
-
-  .content .disapear {
-    display: none;
-  }
-
-  .burger-menu {
-    display: block;
-  }
-
-  .length {
-    background-color: transparent;
-    min-height: 540px;
-    padding: 10px;
-    margin: 0;
-  }
-
-  .omelette-list {
-    height: 100%;
-    font-size: 1rem;
-    line-height: 30px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .omelette-list li {
-    width: 100%;
-    font-weight: 400;
-  }
-
-  .menu-navigation {
-    flex-direction: column;
-    align-items: start;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-  .menu-navigation li,
-  .menu-navigation .li-a {
-    width: 100%;
-    text-align: start;
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 8px;
-    color: black;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .li-a {
-    height: 45px;
-  }
-
-  .menu-navigation .li-a a {
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    padding-top: 10px;
-    padding-left: 10px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .menu-navigation li:active,
-  .menu-navigation .li-a:active {
-    background-color: rgba(236, 236, 236, 0.753);
-  }
-
-  .burger-menu {
-    position: absolute;
-    right: 20px;
-    top: 50px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-  }
-  .drink-list-container {
-    background-color: rgb(31, 31, 31);
-    padding: 0px 16px;
-    padding-top: 40px;
-  }
-
-  .drink-list-container .box {
-    background-color: black;
-    border-radius: 10px;
-  }
 }
