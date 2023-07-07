@@ -1,7 +1,9 @@
 .text {
 	overflow: auto;
+	overflow-x: hidden;
   padding-right: 10px;
 }
+
 
 .force-overflow {
 	min-height: 450px;
@@ -11,6 +13,7 @@
 	width: 4px;
 	background-color: transparent;
   margin-left: 20px;
+	
 }
 
 .text::-webkit-scrollbar:hover{

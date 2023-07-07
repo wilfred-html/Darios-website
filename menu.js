@@ -22,6 +22,15 @@ let fixedspot = document.querySelector(".fixed-spot");
 let moreBtn = document.querySelector(".hover-menu");
 let showOptions = document.querySelector(".my-nav-hovers");
 
+// Function to activate the code when scroll position is reached
+let breakfastControl = document.querySelector(".Breakfast-control");
+let loveAndPastaControl = document.querySelector(".loveAndPasta-control");
+let drinksControl = document.querySelector(".Drinks-control");
+let softdrinkControl = document.querySelector(".softdrink-control");
+let dolciControl = document.querySelector(".dolci-control");
+
+
+
 list.forEach((el) => {
   el.addEventListener("click", (e) => {
     // Change text color of all list items to black
@@ -143,13 +152,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // Define the scroll position where you want to activate the code
 const activationScrollPosition = 240; // Change this value to your desired scroll position
-
-// Function to activate the code when scroll position is reached
-let breakfastControl = document.querySelector(".Breakfast-control");
-let loveAndPastaControl = document.querySelector(".loveAndPasta-control");
-let drinksControl = document.querySelector(".Drinks-control");
-let softdrinkControl = document.querySelector(".softdrink-control");
-let dolciControl = document.querySelector(".dolci-control");
 
 
 
