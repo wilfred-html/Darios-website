@@ -353,17 +353,64 @@ h1 {
 
 footer {
   position: relative;
+  background-color: rgb(27, 27, 27);
+
+}
+
+.footer-box-container {
+  margin: 0 auto;
+  width: 1024px;
+  border-bottom: 1px dashed grey;
+}
+
+.box-container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 250px;
+  column-gap: 20px;
+  padding: 25px;
+}
+
+.box-footer {
+  color: white;
+}
+
+.box-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.footer-h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.box-footer p {
+  font-size: 0.7rem;
+  font-style: oblique;
+}
+
+.social-title-footer {
+  text-decoration: underline;
 }
 
 .t-cs {
-  height: 35px;
-  background-color: rgb(34, 34, 34);
+  height: 45px;
+  /* background-color: rgb(34, 34, 34); */
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   color: lightgray;
   padding-left: 10px;
   font-size: 0.8rem;
+  width: 1040px;
+  margin: 0 auto;
 }
 
 .t-cs a {
@@ -464,11 +511,11 @@ footer {
   animation: burger-animation 1s linear;
 }
 
-.fixed-spot {
-  display: none;
-}
 
-.fixed-spot {
+.Breakfast-control,
+.loveAndPasta-control,
+.Drinks-control,
+.softdrink-control {
   position: fixed;
   top: 15px;
   left: 0;
@@ -539,6 +586,10 @@ footer {
     width: 80%;
   }
 
+  .omelette-list {
+    border-left: 1px solid rgb(212, 212, 212);
+  }
+
   .box_flex-middle {
     justify-content: space-between;
     column-gap: 0;
@@ -576,6 +627,30 @@ footer {
 
   .deactive-stripe {
     display: none;
+  }
+
+  .footer-box-container { 
+    width: 100%;
+
+  }
+
+  .footer-box-container {
+    width: 100%;
+  }
+
+  .box-container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 290px;
+    column-gap: 20px;
+    padding: 25px;
+    padding-left: 40px;
+  }
+
+  .t-cs {
+    width: 100%;
+    height: 50px;
+    justify-content: center;
   }
 }
 
@@ -702,7 +777,7 @@ footer {
     width: 95%;
     padding: 10px;
     margin: 10px;
-    border:1px solid lightgray;
+    border: 1px solid lightgray;
   }
 
   .omelette-list li {
@@ -803,4 +878,6 @@ footer {
     height: 10px;
     width: 0;
   }
+
+ 
 }

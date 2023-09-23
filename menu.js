@@ -1,3 +1,5 @@
+"use strict";
+
 // Retrieve all list items
 let list = document.querySelectorAll(".list li");
 
@@ -28,8 +30,6 @@ let loveAndPastaControl = document.querySelector(".loveAndPasta-control");
 let drinksControl = document.querySelector(".Drinks-control");
 let softdrinkControl = document.querySelector(".softdrink-control");
 let dolciControl = document.querySelector(".dolci-control");
-
-
 
 list.forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -153,34 +153,29 @@ window.addEventListener("DOMContentLoaded", function () {
 // Define the scroll position where you want to activate the code
 const activationScrollPosition = 240; // Change this value to your desired scroll position
 
-
-
 function activateCodeOnScroll() {
   const scrollPosition =
     window.pageYOffset || document.documentElement.scrollTop;
 
-
-
   if (window.matchMedia("(min-width: 670px)").matches) {
     if (
-      (scrollPosition >= activationScrollPosition) &
-      (document.querySelector(".Breakfast").style.display === "flex")
+      scrollPosition >= activationScrollPosition &&
+      document.querySelector(".Breakfast").style.display === "flex"
     ) {
       breakfastControl.style.display = "flex";
-
     } else if (
-      (scrollPosition >= activationScrollPosition) &
-      (document.querySelector(".LoveAndPasta").style.display === "flex")
+      scrollPosition >= activationScrollPosition &&
+      document.querySelector(".LoveAndPasta").style.display === "flex"
     ) {
       loveAndPastaControl.style.display = "flex";
     } else if (
-      (scrollPosition >= activationScrollPosition) &
-      (document.querySelector(".Drinks").style.display === "flex")
+      scrollPosition >= activationScrollPosition &&
+      document.querySelector(".Drinks").style.display === "flex"
     ) {
       drinksControl.style.display = "flex";
     } else if (
-      (scrollPosition >= activationScrollPosition) &
-      (document.querySelector(".Soft-drinks").style.display === "flex")
+      scrollPosition >= activationScrollPosition &&
+      document.querySelector(".Soft-drinks").style.display === "flex"
     ) {
       softdrinkControl.style.display = "flex";
     } else {
