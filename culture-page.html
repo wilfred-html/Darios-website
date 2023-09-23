@@ -42,8 +42,9 @@
         </div>
 
         <div class="mymobile-dropdown">
-          <div class="mymobile-a"><a href="index.html">Home</a></div>
-          <div class="mymobile-a"><a href="menu.html">Menu</a></div>
+          <a href="index.html" class="mymobile-a">Home</a>
+          <!-- <a href="menu.html" class="mymobile-a">Menu</a> -->
+          <a href="index.html#maps" class="mymobile-a">Contact us</a>
         </div>
 
         <div class="myhero-title">
@@ -64,10 +65,20 @@
 
         <div class="greySpace-container"></div>
 
+        
         <div class="feed-container">
+
+
           <div class="wrap-feed">
+          <div class="highlight">"Here's what happend this week"</div>
+
             <!-- SnapWidget -->
             <script src="https://snapwidget.com/js/snapwidget.js"></script>
+            <link
+              rel="stylesheet"
+              href="https://snapwidget.com/stylesheets/snapwidget-lightbox.css"
+            />
+            <script src="https://snapwidget.com/js/snapwidget-lightbox.js"></script>
             <iframe
               src="https://snapwidget.com/embed/1044417"
               class="snapwidget-widget"
@@ -76,6 +87,51 @@
               scrolling="no"
               style="border: none; overflow: hidden; width: 100%"
             ></iframe>
+
+          <div class="highlight highlight2">Pizza party</div>
+
+          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+          <link
+            rel="stylesheet"
+            href="https://snapwidget.com/stylesheets/snapwidget-lightbox.css"
+          />
+          <script src="https://snapwidget.com/js/snapwidget-lightbox.js"></script>
+          <iframe
+            src="https://snapwidget.com/embed/1044417"
+            class="snapwidget-widget"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+            style="border: none; overflow: hidden; width: 100%"
+          ></iframe>
+
+          <div class="highlight highlight2">Contact us to join our pizza party</div>
+
+
+          <form id="contactForm">
+            <div class="wrap-names">
+              <div class="name1">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="name2">
+                <label for="surname">Last Name:</label>
+                <input type="text" id="surname" name="surname" required>
+              </div>
+            </div>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <input type="button" value="Submit" onclick="sendEmail()">
+        </form>
+        
+          
+
           </div>
         </div>
       </div>

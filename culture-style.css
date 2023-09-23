@@ -113,7 +113,7 @@ nav a:nth-child(3):hover {
   background-color: black;
   background-image: url(images/feed/background-1.avif);
   opacity: 0.3;
-  min-height: 900px;
+  min-height: 2550px;
 }
 
 .feed-container {
@@ -127,15 +127,82 @@ nav a:nth-child(3):hover {
   display: flex;
   justify-content: center;
   border: 20px solid rgb(41, 41, 41);
+  min-height: 1000px;
 }
 
 .wrap-feed {
   width: 100%;
   height: 100%;
+  background-color: white;
+}
+
+.highlight {
+  display: flex;
+  justify-content: center;
+  font-style: oblique;
+  font-family: cursive;
+  text-decoration: underline;
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.highlight2 {
+  margin-top: 30px;
 }
 
 iframe {
   width: 100%;
+}
+
+#contactForm {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.wrap-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name1 {
+  margin-right: 20px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+input[type="button"] {
+  background-color: #3f3ce7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 120ms;
+}
+
+input[type="button"]:hover {
+  background-color: #2d2bc0;
 }
 
 /* footer */
@@ -292,6 +359,14 @@ footer {
     justify-content: center;
   border: none;
 
+  }
+
+  #contactForm { 
+    width: 100%;
+  }
+
+  .highlight {
+    text-align:  center;
   }
 
  
