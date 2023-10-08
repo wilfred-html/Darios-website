@@ -179,7 +179,7 @@ main {
 }
 
 .myherobox {
-  min-height: 650px;
+  min-height: 520px;
 }
 
 /* box1 */
@@ -296,6 +296,9 @@ main {
 .box3 {
   background-color: black;
   color: white;
+  display: flex ;
+  align-items: start;
+  padding-top: 20px;
 }
 
 .box3-title {
@@ -308,6 +311,7 @@ main {
 .reviews-container {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .reviews-container a {
@@ -750,6 +754,12 @@ footer {
     padding-top: 20px;
     text-decoration: underline;
   }
+
+  .reviews-container {
+    padding-top: 40px;
+  }
+
+ 
 
   /* location */
   .location-container {

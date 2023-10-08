@@ -71,7 +71,7 @@ nav a:hover {
   transition: border 150ms;
 }
 
-nav a:nth-child(1):hover {
+nav a:nth-child(3):hover {
   border-bottom: 4px solid #c82a35;
 }
 
@@ -79,7 +79,7 @@ nav a:nth-child(2):hover {
   border-bottom: 4px solid #dbdbdb;
 }
 
-nav a:nth-child(3):hover {
+nav a:nth-child(1):hover {
   border-bottom: 4px solid #008d44;
 }
 
@@ -104,6 +104,37 @@ nav a:nth-child(3):hover {
   background-color: #f2f2f2;
 }
 
+.pizzaParty-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+ img {
+  object-fit: cover;
+  object-position:center;
+  pointer-events: none;
+  filter: brightness(80%) contrast(120%);
+  width: 100%;
+  height: 100%;
+}
+
+.pizza-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 237.98px;
+  background-color: lightgray;
+}
+
+.pizza-poster img{
+  object-position: top;
+
+}
+
+
+
 .blackSpace-container {
   background-color: #0f0e0f;
   height: 100px;
@@ -113,7 +144,7 @@ nav a:nth-child(3):hover {
   background-color: black;
   background-image: url(images/feed/background-1.avif);
   opacity: 0.3;
-  min-height: 2550px;
+  min-height: 4100px;
 }
 
 .feed-container {
@@ -191,7 +222,7 @@ textarea {
 
 
 
-input[type="button"] {
+input[type="submit"] {
   background-color: #3f3ce7;
   color: #fff;
   padding: 10px 20px;
@@ -201,7 +232,7 @@ input[type="button"] {
   transition: background-color 120ms;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
   background-color: #2d2bc0;
 }
 
@@ -278,6 +309,7 @@ footer {
     width: 100%;
   }
 
+
   .myhero-title {
     display: none;
   }
@@ -344,7 +376,9 @@ footer {
    transform: scale(2);
   }
 
-
+  .pizza-img {
+    height: 160px;
+  }
 
   .greySpace-container, .blackSpace-container
    {
@@ -367,6 +401,14 @@ footer {
 
   .highlight {
     text-align:  center;
+  }
+
+  .pizzaParty-grid  {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pizza-img:nth-child(9) {
+    display: none;
   }
 
  
